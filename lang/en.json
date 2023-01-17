@@ -1,21 +1,23 @@
 {
-    "NavTitle": "Phat Lorthammakun",
-    "NavItems": [
-        {
-            "title": "Home",
-            "link": "/page?to=home"
-        },
-        {
-            "title": "About",
-            "link": "/page?to=about"
-        },
-        {
-            "title": "Projects",
-            "link": "/page?to=projects"
-        },
-        {
-            "title": "Contact",
-            "link": "/page?to=contact"
-        }
-    ]
+    "Home":{
+        "NavTitle": "Phat Lorthammakun",
+        "NavItems": [
+            {
+                "title": "Home",
+                "link": "/page?to=home"
+            },
+            {
+                "title": "About",
+                "link": "/page?to=about"
+            },
+            {
+                "title": "Projects",
+                "link": "/page?to=projects"
+            },
+            {
+                "title": "Contact",
+                "link": "/page?to=contact"
+            }
+        ]   
+    }
 }

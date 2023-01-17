@@ -38,14 +38,14 @@
 <div class="navbar">
     <div class="container data-i18n">
         <p class="head">
-            <%= lang.NavTitle %>
+            <%= lang.Home.NavTitle %>
         </p>
 
         <!-- get all the NavItems -->
-        <% for (let i=0; i < Object.keys(lang.NavItems).length; i++) { %>
+        <% for (let i=0; i < Object.keys(lang.Home.NavItems).length; i++) { %>
                 <!-- add onclick event redirect -->
-                <p class="item" onclick="window.location.href='<%= lang.NavItems[i].link %>'">
-                    <%= lang.NavItems[i].title %></p>
+                <p class="item" onclick="window.location.href='<%= lang.Home.NavItems[i].link %>'">
+                    <%= lang.Home.NavItems[i].title %></p>
                     <% } %> 
     </div>
 
