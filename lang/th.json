@@ -1,3 +1,21 @@
 {
-    "Nav-Header": "ภัทร ล้อธรรมคุณ"
+    "NavTitle": "ภัทร ล้อธรรมคุณ",
+    "NavItems": [
+        {
+            "title": "หน้าหลัก",
+            "link": "/page?to=home"
+        },
+        {
+            "title": "เกี่ยวกับ",
+            "link": "/page?to=about"
+        },
+        {
+            "title": "ผลงาน/โครงการ",
+            "link": "/page?to=projects"
+        },
+        {
+            "title": "ติดต่อ",
+            "link": "/page?to=contact"
+        }
+    ]
 }
