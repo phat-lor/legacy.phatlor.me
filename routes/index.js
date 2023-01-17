@@ -6,13 +6,12 @@ var thlang = require("../lang/th.json");
 router.get("/", (req, res) => {
 
     // get cookie
-    var curlang = req.cookies.lang;
+    var curlang = req.cookies.languge;
     if (curlang == undefined) {
         curlang = "en";
+        res.cookie("languge", curlang);
     }
     // write cookie
-    res.cookie("languge", curlang);
-
     const lang = curlang == "en" ? enlang : thlang;
 
     // console.log(lang);
