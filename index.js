@@ -1,8 +1,9 @@
 var express = require('express')
 var path = require('path');
+var cookieParser = require('cookie-parser')
 
 var app = express().disable("x-powered-by");
-const port = 6000;
+const port = 5000;
 
 //Static the html folder
 app.use(express.static(__dirname + '/assets'));
@@ -11,6 +12,7 @@ app.set('view engine', 'ejs');
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(cookieParser())
 
 app.enable("trust proxy"); // only if you're behind a reverse proxy (Heroku, Bluemix, AWS ELB, Nginx, etc)
 
