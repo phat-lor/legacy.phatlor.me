@@ -2,8 +2,11 @@ var express = require('express')
 var path = require('path');
 var cookieParser = require('cookie-parser')
 
+require('dotenv').config();
+
+
 var app = express().disable("x-powered-by");
-const port = 5000;
+const port = process.env.PORT || 6000;
 
 //Static the html folder
 app.use(express.static(__dirname + '/assets'));
