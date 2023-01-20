@@ -24,7 +24,8 @@ body {
     position: relative;
     background-color: #ff7bf8;
     /* load image form url */
-    background-image: url(https://tr.rbxcdn.com/fba2b726e48cc00a29565e301bb4db8b/500/280/Image/Jpeg);
+    /* background-image: url(https://tr.rbxcdn.com/fba2b726e48cc00a29565e301bb4db8b/500/280/Image/Jpeg); */
+    background-color: linear-gradient(180deg, rgba(68, 195, 253, 0.9), rgba(255, 123, 248, 0.9));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
