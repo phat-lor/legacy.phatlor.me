@@ -1,7 +1,7 @@
 var router = require("express").Router();
 var fs = require("fs");
 
-router.get("/", (req, res) => {
+router.get("/about", (req, res) => {
 
     // get cookie
     var curlang = req.cookies.languge;
@@ -20,11 +20,7 @@ router.get("/", (req, res) => {
 
     // console.log(lang);
 
-    res.render("index", {lang: lang});
-});
-
-router.get("/home" , (req, res) => {
-    res.redirect("/");
+    res.render("about", {lang: lang});
 });
 
 // router.post ("/", (request, response) => {

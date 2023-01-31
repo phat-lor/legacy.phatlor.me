@@ -99,12 +99,19 @@ body {
     color: #ffffff;
     text-decoration: none;
     transition: 0.5s;
+    /* make the text 1 line */
+    white-space: nowrap;
     /* border: rgb(255, 255, 255) 1px solid; */
 }
 
 .navbar .container .item:hover {
     background-color: #2222228e;
 }
+
+.navbar .container .item .active {
+    background-color: #2222228e;
+}
+
 
 * {
     /* disable select */

@@ -1,23 +1,28 @@
 {
-    "Home":{
-        "NavTitle": "Phat Lorthammakun",
-        "NavItems": [
-            {
-                "title": "Home",
-                "link": "/page?to=home"
-            },
-            {
-                "title": "About",
-                "link": "/page?to=about"
-            },
-            {
-                "title": "Projects",
-                "link": "/page?to=projects"
-            },
-            {
-                "title": "Contact",
-                "link": "/page?to=contact"
-            }
-        ]   
-    }
+    "NavTitle": "Phat Lorthammakun",
+    "NavItems": [
+      {
+        "title": "Home",
+        "link": "/page?to=home"
+      },
+      {
+        "title": "About",
+        "link": "/page?to=about"
+      },
+      {
+        "title": "Projects",
+        "link": "/page?to=projects"
+      },
+      {
+        "title": "Contact",
+        "link": "/page?to=contact"
+      }
+    ],
+  "Home": {
+    "Title": "Phat Lorthammakun - High School Student and Coding Enthusiast",
+    "Subtitle": "Welcome to my website! I'm a high school student with a passion for coding. Here you can learn more about my interests and projects."
+  },
+  "About": {
+    "Title": "About Me"
+  }
 }
