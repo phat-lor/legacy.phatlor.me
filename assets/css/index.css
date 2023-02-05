@@ -35,11 +35,13 @@ body {
     background-color: #22222281;
     /* background rounded */
     border-radius: 10px;
-    padding: 10px;
+    padding: 0;
+    margin: 5px;
+    padding: 5px;
 }
 
 .section-1 .title {
-    font-size: 3rem;
+    font-size: 2vw;
     font-weight: 700;
     text-align: center;
     color: #ffffff;
@@ -49,13 +51,20 @@ body {
 }
 
 .section-1 .description {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: 400;
     text-align: center;
     color: #ffffff;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.section-1 .image {
+    /* rounded */
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -79,7 +88,6 @@ body {
     font-family: 'Roboto', sans-serif;
     padding-right: 10px;   
 }
-
 
 .navbar .container .head{
     width: 100%;
@@ -121,7 +129,6 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
     margin: 0;
     padding: 0;
 }
