@@ -19,10 +19,11 @@
       }
     ],
   "Home": {
-    "Title": "Phat Lorthammakun - High School Student and Coding Enthusiast",
+    "Title": "Phat Lorthammakun - High School Student that likes to code",
     "Subtitle": "Welcome to my website! I'm a high school student with a passion for coding. Here you can learn more about my interests and projects."
   },
   "About": {
-    "Title": "About Me"
+    "Title": "About Me",
+    "Subtitle": "Meow mew mow maw"
   }
 }

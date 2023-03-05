@@ -39,6 +39,10 @@ body {
     margin: 5px;
     padding: 5px;
 }
+.section-1 .stringcontainer .flex{
+    display: flex;
+}
+
 
 .section-1 .title {
     font-size: 2vw;
@@ -65,6 +69,9 @@ body {
     border-radius: 10%;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: auto;
+  
 }
 
 .navbar {

@@ -26,6 +26,10 @@ require("fs")
     app.use(require("./routes/" + file));
   });
 
+app.get("*", (req, res) => {
+    res.render("error", {error: "Page not found (404)"});
+});
+
 app.listen(port, () => {
   console.log(`Start Compleate ${port}`);
 });
