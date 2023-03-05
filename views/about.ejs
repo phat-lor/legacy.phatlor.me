@@ -16,6 +16,7 @@
 
     <!-- Load css  -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
 
     <!-- load scripts -->
     <script src="https://kit.fontawesome.com/955d8ce723.js" crossorigin="anonymous"></script>
@@ -34,18 +35,44 @@
 <body>
     <%- include("./template/NavBar.ejs") %>
         <section class="section-1">
-            <div class="stringcontainer">
-                <h1 class="title">
-                    <%= lang.About.Title %>
-                </h1>
+            <div class="aboutcontainer">
                 <div class="flex">
                     <div>
-                        <img class="image" src="img/markfurri.png" alt="markfurri">
+                        <img class="image" src="img/mrshark.png" height="150" width="150" alt="favsharkimg">
                     </div>
                     <div>
-                        <p class="description">
-                            <%= lang.About.Subtitle %>
-                        </p>
+                        <h1 class="title">
+                            <%= lang.About.Title %>
+                        </h1>
+                        <br>
+                        <div>
+                            <p class="description">
+                                <%= lang.About.Subtitle %>
+                            </p>
+                        </div>
+                        <div class="contact">
+                            <br>
+                            <p class="title">Contacts</p>
+                            <br>
+                            <a href="https://discord.com/channels/@me/531802615202316298" target="_blank" class="contacts discord">
+                                <i class="fab fa-discord"  width="10px"></i>
+                            </a>
+                            <a href="https://github.com/EpicCatto" target="_blank" class="contacts github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@phatlor" target="_blank" class="contacts youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/phat.lor/" target="_blank" class="contacts instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/EpicCatto4321" target="_blank" class="contacts twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="mailto:contact@phatlor.me" target="_blank" class="contacts email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
         </section>

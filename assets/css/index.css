@@ -64,15 +64,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.section-1 .image {
-    /* rounded */
-    border-radius: 10%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-  
-}
 
 .navbar {
     width: 100%;

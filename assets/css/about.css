@@ -1,0 +1,93 @@
+.aboutcontainer{
+    background-color: #22222281;
+    /* background rounded */
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+    padding: 5px;
+    max-width: 50vw;
+}
+
+.aboutcontainer .flex{
+    display: flex;
+}
+
+.aboutcontainer .title {
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutcontainer .description {
+    font-size: 1vw;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutcontainer .image {
+    /* rounded */
+    border-radius: 20%;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.aboutcontainer .contact {
+    font-size: 1vw;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutcontainer .contact .contacts{
+    font-size: 2vw;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.aboutcontainer .contact .contacts:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.aboutcontainer .contact .discord:hover{
+    color: #2067ff;
+    text-decoration: none;
+}
+.aboutcontainer .contact .github:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.aboutcontainer .contact .youtube:hover{
+    color: #ff0000;
+    text-decoration: none;
+}
+.aboutcontainer .contact .instagram:hover{
+    color: #f700ff;
+    text-decoration: none;
+}
+.aboutcontainer .contact .twitter:hover{
+    color: #00b0ff;
+    text-decoration: none;
+}
+.aboutcontainer .contact .email:hover{
+    color: #ff0000;
+    text-decoration: none;
+}

@@ -14,8 +14,8 @@
         "link": "/page?to=projects"
       },
       {
-        "title": "Contact",
-        "link": "/page?to=contact"
+        "title": "Certificates",
+        "link": "/page?to=certificates"
       }
     ],
   "Home": {
@@ -24,6 +24,6 @@
   },
   "About": {
     "Title": "About Me",
-    "Subtitle": "Meow mew mow maw"
+    "Subtitle": "Hello, my name is Phat. or you can call me pat if you want. I'm a high school student that likes to code. Currently, I'm focused on backend development and currently learning web development and I'm interested in learning more about it. I'm also interested in learning about data-science ways to optimize the searching algorithms and stuff."
   }
 }
