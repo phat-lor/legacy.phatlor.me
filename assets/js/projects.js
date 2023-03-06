@@ -6,12 +6,16 @@ async function getProjects() {
 }
 
 async function renderProjects() {
-    const projects = await getProjects();
-    const projectsContainer = document.querySelector('.projects-container');
-    projects.forEach(project => {
-        const projectElement = createProject(project);
-        projectsContainer.appendChild(projectElement);
+    getProjects().then(data => {
+        const projectsContainer = document.querySelector('.projects-container');
+        data.forEach(project => {
+            projectsContainer.appendChild(createProject(project));
+        });
+    }
+    ).finally(() => {
+        document.getElementById('loading-text').remove();
     });
+
 }
 
 function createProject(data) {
