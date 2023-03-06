@@ -14,12 +14,12 @@
         "link": "/page?to=projects"
       },
       {
-        "title": "Certificates",
-        "link": "/page?to=certificates"
+        "title": "Experience",
+        "link": "/page?to=experience"
       }
     ],
   "Home": {
-    "Title": "Phat Lorthammakun - High School Student that likes to code",
+    "Title": "Phat Lorthammakun - High School Student who likes to code",
     "Subtitle": "Welcome to my website! I'm a high school student with a passion for coding. Here you can learn more about my interests and projects."
   },
   "About": {
