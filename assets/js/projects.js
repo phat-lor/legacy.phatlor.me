@@ -12,7 +12,7 @@ async function renderProjects() {
             projectsContainer.appendChild(createProject(project));
         });
     }
-    ).finally(() => {
+    ).then(() => {
         document.getElementById('loading-text').remove();
     });
 
