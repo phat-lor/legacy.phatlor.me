@@ -195,3 +195,16 @@ body {
     margin: 0;
     padding: 0;
 }
+
+button{
+    font-size: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b920b2;
+    color: white;
+
+}
