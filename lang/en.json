@@ -3,15 +3,15 @@
     "NavItems": [
       {
         "title": "Home",
-        "link": "/page?to=home"
+        "link": "home();"
       },
       {
         "title": "About",
-        "link": "/page?to=about"
+        "link": "about();"
       },
       {
         "title": "Projects",
-        "link": "/page?to=projects"
+        "link": "projects();"
       },
       {
         "title": "Experience",

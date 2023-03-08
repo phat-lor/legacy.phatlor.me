@@ -3,13 +3,15 @@
         <p class="head">
             <%= lang.NavTitle %>
         </p>
-
+        
+        <!-- <div class="navitems"> -->
         <!-- get all the NavItems -->
         <% for (let i=0; i < Object.keys(lang.NavItems).length; i++) { %>
             <!-- add onclick event redirect and add class active if its on the same oa -->
-            <p class="item" onclick="window.location.href='<%= lang.NavItems[i].link %>'">
+            <p class="item navbar-link" onclick="<%= lang.NavItems[i].link %>">
                 <%= lang.NavItems[i].title %>
             </p>
             <% } %>
+        </div>
     </div>
 </div>
