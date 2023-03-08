@@ -14,16 +14,41 @@ function handleNavbarSize(){
         }
     }
 }
+
+function setSectionQuery(section){
+    var url = new URL(window.location.href)
+    url.searchParams.set("section", section)
+    window.history.pushState({}, "", url)
+}
+
+
+// handle url query
+function handleUrlQuery(){
+    var url = new URL(window.location.href)
+    var query = url.searchParams.get("section")
+    if (query == "about"){
+        about()
+    } else if (query == "projects"){
+        projects()
+    } else {
+        home()
+    }
+}
+
+
 function home(){
     document.getElementById("home").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("home")
 }
 
 function about(){
     document.getElementById("about").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("about")
 }
 
 function projects(){
     document.getElementById("projects").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("projects")
 }
 
 // detect which section is in view
@@ -39,14 +64,17 @@ function detectSection(){
         navbarLinks[0].classList.add("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
+        setSectionQuery("home")
     } else if (aboutRect.top <= 0 && aboutRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.add("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
+        setSectionQuery("about")
     } else if (projectsRect.top <= 0 && projectsRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.add("navbar-link-active")
+        setSectionQuery("projects")
     } else {
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
@@ -54,5 +82,6 @@ function detectSection(){
     }
 }
 
+handleUrlQuery()
 window.addEventListener("scroll", detectSection)
 window.addEventListener("resize", handleNavbarSize)
