@@ -1,5 +1,5 @@
 async function getProjects() {
-    const response = await fetch('/projects.json');
+    const response = await fetch('/json/projects.json');
     const data = await response.json();
     console.log(data);
     return data;

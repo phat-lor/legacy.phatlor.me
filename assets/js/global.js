@@ -27,58 +27,81 @@ function handleUrlQuery(){
     var url = new URL(window.location.href)
     var query = url.searchParams.get("section")
     if (query == "about"){
-        about()
+        toabout()
     } else if (query == "projects"){
-        projects()
+        toprojects()
     } else {
-        home()
+        tohome()
     }
 }
 
 
-function home(){
+function tohome(){
+    // console.log("tohome")
     document.getElementById("home").scrollIntoView({behavior: "smooth"})
     setSectionQuery("home")
 }
 
-function about(){
+function toabout(){
+    // console.log("toabout")
     document.getElementById("about").scrollIntoView({behavior: "smooth"})
     setSectionQuery("about")
 }
 
-function projects(){
+function toprojects(){
+    // console.log("toprojects")
     document.getElementById("projects").scrollIntoView({behavior: "smooth"})
     setSectionQuery("projects")
 }
+
+function toachievement(){
+    // console.log("toachievement")
+    document.getElementById("achievement").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("achievement")
+}
+
+
 
 // detect which section is in view
 function detectSection(){
     var home = document.getElementById("home")
     var about = document.getElementById("about")
     var projects = document.getElementById("projects")
+    var achievement = document.getElementById("achievement")
     var homeRect = home.getBoundingClientRect()
     var aboutRect = about.getBoundingClientRect()
     var projectsRect = projects.getBoundingClientRect()
+    var achievementRect = achievement.getBoundingClientRect()
     var navbarLinks = document.getElementsByClassName("navbar-link")
     if (homeRect.top <= 0 && homeRect.bottom > 0){
         navbarLinks[0].classList.add("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
+        navbarLinks[3].classList.remove("navbar-link-active")
         // setSectionQuery("home")
     } else if (aboutRect.top <= 0 && aboutRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.add("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
+        navbarLinks[3].classList.remove("navbar-link-active")
         // setSectionQuery("about")
     } else if (projectsRect.top <= 0 && projectsRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.add("navbar-link-active")
+        navbarLinks[3].classList.remove("navbar-link-active")
         // setSectionQuery("projects")
-    } else {
+    } else if(achievementRect.top <= 0 && achievementRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
+        navbarLinks[3].classList.add("navbar-link-active")
+        // setSectionQuery("achievement")
+    }else {
+        navbarLinks[0].classList.remove("navbar-link-active")
+        navbarLinks[1].classList.remove("navbar-link-active")
+        navbarLinks[2].classList.remove("navbar-link-active")
+        navbarLinks[3].classList.add("navbar-link-active")
     }
 }
 
