@@ -6,7 +6,7 @@ function handleNavbarSize(){
     if (window.innerWidth <= 768){
         if (!navbarsmall){
             navbarsmall = true
-            document.getElementById("navbar").classList.add("navbar-small")
+            // document.getElementById("navbar").classList.add("navbar-small")
         }
     } else {
         if (navbarsmall){
@@ -35,7 +35,6 @@ function handleUrlQuery(){
     }
 }
 
-handleUrlQuery()
 
 function home(){
     document.getElementById("home").scrollIntoView({behavior: "smooth"})
@@ -65,17 +64,17 @@ function detectSection(){
         navbarLinks[0].classList.add("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
-        setSectionQuery("home")
+        // setSectionQuery("home")
     } else if (aboutRect.top <= 0 && aboutRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.add("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
-        setSectionQuery("about")
+        // setSectionQuery("about")
     } else if (projectsRect.top <= 0 && projectsRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.add("navbar-link-active")
-        setSectionQuery("projects")
+        // setSectionQuery("projects")
     } else {
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
@@ -83,5 +82,7 @@ function detectSection(){
     }
 }
 
+window.addEventListener("load", handleUrlQuery)
+window.addEventListener("load", detectSection)
 window.addEventListener("scroll", detectSection)
 window.addEventListener("resize", handleNavbarSize)

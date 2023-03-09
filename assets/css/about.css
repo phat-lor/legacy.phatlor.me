@@ -13,7 +13,7 @@
 }
 
 .aboutcontainer .title {
-    font-size: 2vw;
+    font-size: 30px;
     font-weight: 700;
     text-align: center;
     color: #ffffff;
@@ -23,7 +23,7 @@
 }
 
 .aboutcontainer .description {
-    font-size: 1vw;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
     color: #ffffff;
@@ -51,7 +51,7 @@
 }
 
 .aboutcontainer .contact .contacts{
-    font-size: 2vw;
+    font-size: 40px;
     font-weight: 400;
     text-align: center;
     color: #ffffff;
@@ -90,4 +90,23 @@
 .aboutcontainer .contact .email:hover{
     color: #ff0000;
     text-decoration: none;
+}
+
+/* mobile support */
+@media screen and (max-width: 600px) {
+    .aboutcontainer .title {
+        font-size: 20px;
+    }
+    .aboutcontainer .abtmestyle{
+        display: grid;
+    }
+    .aboutcontainer .contact .contacts {
+        font-size: 20px;
+    }
+    .aboutcontainer .description {
+        font-size: 10px;
+    }
+    .aboutcontainer {
+        max-width: 100vw;
+    }
 }
