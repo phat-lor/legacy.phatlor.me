@@ -5,11 +5,26 @@ async function getProjects() {
     return data;
 }
 
-async function renderProjects() {
+async function renderProjects(datasaver) {
+    // warning box fade out
+    const warningBox = document.getElementById('pjwarnsel');
+    warningBox.remove();
+
+    // warningBox.classList.add('fade-out');
+    // setTimeout(() => {
+    //     warningBox.remove();
+    // }, 1000);
+
+    // loading text
+    const loadingText = document.createElement('p');
+    loadingText.id = 'loading-text';
+    loadingText.innerText = 'Loading...';
+    document.querySelector('.projects-container').appendChild(loadingText);
+
     getProjects().then(data => {
         const projectsContainer = document.querySelector('.projects-container');
         data.forEach(project => {
-            projectsContainer.appendChild(createProject(project));
+            projectsContainer.appendChild(createProject(project, datasaver));
         });
     }
     ).then(() => {
@@ -18,7 +33,7 @@ async function renderProjects() {
 
 }
 
-function createProject(data) {
+function createProject(data, datasaver) {
     const project = document.createElement('div');
     project.classList.add('project');
     // format example
@@ -34,7 +49,7 @@ function createProject(data) {
     //     }
     // },
 
-    if (data.image) {
+    if (data.image && !datasaver) {
         const projectImage = document.createElement('img');
         projectImage.src = data.image;
         project.appendChild(projectImage);
