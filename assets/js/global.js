@@ -35,6 +35,7 @@ function handleUrlQuery(){
     }
 }
 
+handleUrlQuery()
 
 function home(){
     document.getElementById("home").scrollIntoView({behavior: "smooth"})
@@ -82,6 +83,5 @@ function detectSection(){
     }
 }
 
-handleUrlQuery()
 window.addEventListener("scroll", detectSection)
 window.addEventListener("resize", handleNavbarSize)
