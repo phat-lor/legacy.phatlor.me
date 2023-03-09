@@ -196,6 +196,13 @@ button{
 
 }
 
+/* mobile suppoer */
+@media screen and (max-width: 600px) {
+    button {
+        font-size: 15px;
+    }
+}
+
 .footer {
     background-color: #ff7bf8;
     background-image: linear-gradient(180deg, rgba(248, 118, 242, 0.9), rgba(248, 118, 242, 0.9));
