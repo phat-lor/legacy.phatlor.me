@@ -30,7 +30,9 @@ function handleUrlQuery(){
         toabout()
     } else if (query == "projects"){
         toprojects()
-    } else {
+    } else if (query == "achievement"){
+        toachievement()
+    }else {
         tohome()
     }
 }
