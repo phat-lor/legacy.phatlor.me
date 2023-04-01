@@ -112,6 +112,9 @@ window.onload = function () {
   }
   
   function hide() {
+    // show loading
+    document.getElementById("loading").style.display = "block";
+
     // disable scroll
     document.body.style.overflow = "hidden";
     $(document.getElementById("site-content")).animate({ opacity: 0 }, 1000);
@@ -120,6 +123,8 @@ window.onload = function () {
   
   function show() {
     document.body.style.overflow = "";
+    // hide loading
+    document.getElementById("loading").style.display = "none";
     handleUrlQuery();
     $(document.getElementById("site-content")).animate({ opacity: 1 }, 1000);
     document.getElementById("site-content").style.display = "block";
@@ -133,7 +138,7 @@ window.onload = function () {
       return;
     }
     // ger contatiner
-    const contain = document.getElementById("loading");
+    const contain = document.getElementById("loading-container");
     const loadingText = document.createElement("p");
     loadingText.id = "loading-text";
     loadingText.innerText = message;
@@ -184,8 +189,7 @@ window.onload = function () {
   function checkAssets(resolve, reject, startTime) {
     let totalImages = $("img").length;
     let loadedImages = 0;
-    let done1 = false;
-    let done2 = false;
+    let skipVis = false;
 
     const interval = setInterval(() => {
       let allImagesLoaded = true;
@@ -223,7 +227,24 @@ window.onload = function () {
           resolve();
         }, 1000);
       } else {
-        if(loadedImages>=totalImages)render(`Checking assets...`);else render(`Loading assets... ${totalImages}/${totalImages}`);
+        if(loadedImages>=totalImages){
+            if(!skipVis){
+                skipVis = true;
+
+                // create a skip button
+                const skipButton = document.createElement("button");
+                skipButton.innerText = "Skip";
+                skipButton.classList.add("skip-button");
+                skipButton.onclick = () => {
+                    show();
+                    clearInterval(interval);
+                    skipButton.remove();
+                };
+                document.getElementById("loading-container").appendChild(skipButton);
+            }
+                    
+            render(`Verifying assets...`);
+        }else render(`Loading assets... ${totalImages}/${totalImages}`);
       }
     }, 500);
   }
