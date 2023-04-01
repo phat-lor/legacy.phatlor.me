@@ -5,6 +5,18 @@ async function getProjects() {
     return data;
 }
 
+function autoDetectProject(){
+    // get device type if mobile or desktop 
+    if (window.innerWidth <= 768){
+        renderProjects(true)
+        // document.getElementById("pjwarnsel").innerText = "You are using mobile device, some features may not work properly."
+    } else {
+        renderProjects(false)
+        console.log("desktop")
+    }
+
+}
+
 async function renderProjects(datasaver) {
     // warning box fade out
     const warningBox = document.getElementById('pjwarnsel');
@@ -17,7 +29,7 @@ async function renderProjects(datasaver) {
 
     // loading text
     const loadingText = document.createElement('p');
-    loadingText.id = 'loading-text';
+    loadingText.id = 'p-loading-text';
     loadingText.innerText = 'Loading...';
     document.querySelector('.projects-container').appendChild(loadingText);
 
@@ -28,7 +40,7 @@ async function renderProjects(datasaver) {
         });
     }
     ).then(() => {
-        document.getElementById('loading-text').remove();
+        document.getElementById('p-loading-text').remove();
     });
 
 }

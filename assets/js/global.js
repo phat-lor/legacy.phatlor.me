@@ -100,10 +100,10 @@ function detectSection(){
         navbarLinks[3].classList.add("navbar-link-active")
         // setSectionQuery("achievement")
     }else {
-        navbarLinks[0].classList.remove("navbar-link-active")
+        navbarLinks[0].classList.add("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
-        navbarLinks[3].classList.add("navbar-link-active")
+        navbarLinks[3].classList.remove("navbar-link-active")
     }
 }
 

@@ -1,7 +1,16 @@
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
+    background: #2222226e;
 }
-
+::-webkit-scrollbar-thumb {
+    background: #ff7bf8;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff7bf84d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff7bf8;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -10,6 +19,7 @@ body {
     background-color: #222222;
     color: #ffffff;
     align-items: center;
+    overflow: overlay;
 }
 
 .section-1 {
@@ -173,6 +183,7 @@ body {
 
 * {
     /* disable select */
+    align-items: center;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;

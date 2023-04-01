@@ -4,21 +4,28 @@
 <%- include("./components/Head.ejs") %>
 
 <body>
+  <div id = "loading">
+  </div>
+  <div id = "site-content" style="display: none;">
     <%- include("./components/NavBar.ejs") %>
     <%- include("./components/Home.ejs") %>
     <%- include("./components/About.ejs") %>
     <%- include("./components/Projects.ejs") %>
     <%- include("./components/Achievement.ejs") %>
+    <%- include("./components/Footer.ejs") %>
+  </div>
     <script src="js/unsupportedscreen.js"></script>
-    <script async src="js/global.js"></script>
     <script src="js/certificates.js"></script>
     <script src="js/awards.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/init.js""></script>
     <script>
-      init();
-      renderCertificates();
-      renderAwards();
+      load();
+      // hide();
+      // init();
+      // renderCertificates();
+      // renderAwards();
     </script>
-    <%- include("./components/Footer.ejs") %>
   </body>
 
 </html>

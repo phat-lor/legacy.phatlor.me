@@ -1,0 +1,15 @@
+.load-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    display: block;
+    transform: translate3D(-50%, -50%, 0);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loading {
+    transition: 1s;
+}
