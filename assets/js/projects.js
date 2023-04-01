@@ -64,6 +64,9 @@ function createProject(data, datasaver) {
     if (data.image && !datasaver) {
         const projectImage = document.createElement('img');
         projectImage.src = data.image;
+        // alt
+        projectImage.alt = data.name;
+        
         project.appendChild(projectImage);
     }
 
