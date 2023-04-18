@@ -31,5 +31,10 @@ function createCertificate(data) {
     certificate.addEventListener('click', () => {
         window.open(data.image, '_blank');
     });
+    // aos
+    certificate.setAttribute('data-aos', 'fade-up');
+    certificate.setAttribute('data-aos-delay', '100');
+    certificate.setAttribute('data-aos-duration', '500');
+
     return certificate;
 }

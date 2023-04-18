@@ -127,6 +127,15 @@ function createProject(data, datasaver) {
             projectUrls.appendChild(projectGitHub);
         }
     }
+    // aos
+    project.setAttribute('data-aos', 'fade-up');
+    project.setAttribute('data-aos-duration', '1000');
+    project.setAttribute('data-aos-delay', '100');
+    project.setAttribute('data-aos-offset', '0');
+    project.setAttribute('data-aos-easing', 'ease-in-out');
+    project.setAttribute('data-aos-mirror', 'true');
+    project.setAttribute('data-aos-once', 'false');
+    project.setAttribute('data-aos-anchor-placement', 'top-bottom');
 
     return project;
 }

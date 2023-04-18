@@ -128,10 +128,12 @@ window.onload = function () {
     handleUrlQuery();
     $(document.getElementById("site-content")).animate({ opacity: 1 }, 1000);
     document.getElementById("site-content").style.display = "block";
+    AOS.refresh();
   }
   
   function render(message) {
     console.log(message);
+    if(window.location.search.includes("skipLoadingScreen"))return;
     if (document.getElementById("loading-text")) {
       const loadingText = document.getElementById("loading-text");
       loadingText.innerText = message;
@@ -148,9 +150,12 @@ window.onload = function () {
   
   async function load() {
     console.log("load");
+    if(!window.location.search.includes("skipLoadingScreen"))
     hide();
     render("Loading...");
     const startTime = Date.now();
+    // check skip loading screen query  
+      
     new Promise((resolve, reject) => {
       try {
         init();
@@ -162,7 +167,10 @@ window.onload = function () {
         autoDetectProject();
         render("Loading projects...");
         setTimeout(() => {
+          if(!window.location.search.includes("skipLoadingScreen"))
             checkAssets(resolve, reject, startTime);
+          else
+            resolve();
         }, 1000);
       } catch (error) {
         reject(error);

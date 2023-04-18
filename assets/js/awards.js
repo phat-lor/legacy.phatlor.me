@@ -97,5 +97,9 @@ function createAward(data) {
             window.open(data.source, '_blank');
         });
     }
+    // aos
+    award.setAttribute('data-aos', 'fade-up');
+    award.setAttribute('data-aos-duration', '1000');
+    
     return award;
 }

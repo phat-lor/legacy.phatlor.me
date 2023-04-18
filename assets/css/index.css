@@ -42,14 +42,48 @@ body {
     background-position: center;
 }
 
+
+@keyframes floaty {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .section-1 .stringcontainer{
-    background-color: #22222281;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* glow */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    /* background glow */
+    background: rgba(0, 0, 0, 0.3);
+
+    /* background-color: #22222281; */
     /* background rounded */
     border-radius: 10px;
     padding: 0;
     margin: 5px;
     padding: 5px;
+    animation: floaty 3s ease-in-out infinite;
+    transition: 1s;
 }
+
+.section-1 .stringcontainer:hover{
+    /* turns into backdrop shadow */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* glow */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    /* background glow */
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
 .section-1 .stringcontainer .flex{
     display: flex;
 }
