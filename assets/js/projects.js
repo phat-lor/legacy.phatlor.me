@@ -70,6 +70,22 @@ function createProject(data, datasaver) {
         project.appendChild(projectImage);
     }
 
+    if (data.youtube_embed){
+        const projectVideoContainer = document.createElement('div');
+        projectVideoContainer.classList.add('project-video-container');
+        project.appendChild(projectVideoContainer);
+        
+        const projectVideo = document.createElement('iframe');
+        let videoId = data.youtube_embed.split("/")[4];
+        projectVideo.src = data.youtube_embed + `?autoplay=${datasaver ? 0 : 1}&controls=1&loop=1&mute=1&playlist=` + videoId;
+        projectVideo.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        projectVideo.allowFullscreen = true;
+        projectVideo.frameborder = 0;
+        projectVideo.width = "100%";
+        projectVideo.height = "100%";
+        projectVideoContainer.appendChild(projectVideo);
+    }
+
     if (data.name) {
         const projectName = document.createElement('h3');
         projectName.innerText = data.name;
