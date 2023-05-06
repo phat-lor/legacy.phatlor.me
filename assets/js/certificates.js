@@ -1,8 +1,5 @@
 async function getCertificates() {
-    const res = await fetch('/json/certificates.json');
-    const data = await res.json();
-    console.log(data);
-    return data;
+    return inData.Achivement.items.Certificates.items;
 }
 
 async function renderCertificates() {

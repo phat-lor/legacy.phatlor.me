@@ -158,6 +158,7 @@ window.onload = function () {
       
     new Promise((resolve, reject) => {
       try {
+        if(inData == null || inData == undefined || inData=="") throw new Error("Language data not found or invalid failed to load?");
         init();
         render("Loading projects...");
         renderCertificates();
@@ -174,6 +175,7 @@ window.onload = function () {
         //     resolve();
         // }, 1000);
       } catch (error) {
+        console.log(error);
         reject(error);
       }
     })

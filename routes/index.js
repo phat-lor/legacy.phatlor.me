@@ -17,7 +17,12 @@ router.get("/", (req, res) => {
             lang = JSON.parse(fs.readFileSync("./assets/lang/" + file, "utf8"));
         }
     });
-
+    // console.log("Language: " + curlang);
+    // check if the language is not found
+    if (Object.keys(lang).length === 0) {
+        res.cookie("languge", "en");
+        return res.redirect(`/error?error=Language "${curlang}" not found this error should be automatically fixed. Please click the "go back home" button. If the problem still appears, please contact me.`)
+    }
     // console.log(lang);
 
     res.render("index", {lang: lang});

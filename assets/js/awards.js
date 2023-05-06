@@ -1,8 +1,5 @@
 async function getAwards() {
-    const res = await fetch('/json/awards.json');
-    const data = await res.json();
-    console.log(data);
-    return data;
+    return inData.Achivement.items.Awards.items;
 }
 
 async function renderAwards() {

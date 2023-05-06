@@ -1,29 +1,138 @@
 {
-    "NavTitle": "Phat Lorthammakun",
-    "NavItems": [
-      {
-        "title": "Home",
-        "link": "tohome();"
-      },
-      {
-        "title": "About",
-        "link": "toabout();"
-      },
-      {
-        "title": "Projects",
-        "link": "toprojects();"
-      },
-      {
-        "title": "Achievement",
-        "link": "toachievement();"
-      }
-    ],
+  "NavTitle": "Phat Lorthammakun",
+  "NavItems": [
+    {
+      "title": "Home",
+      "link": "tohome();"
+    },
+    {
+      "title": "About",
+      "link": "toabout();"
+    },
+    {
+      "title": "Projects",
+      "link": "toprojects();"
+    },
+    {
+      "title": "Achievement",
+      "link": "toachievement();"
+    }
+  ],
   "Home": {
     "Title": "Phat Lorthammakun - High School Student who likes to code",
     "Subtitle": "Welcome to my website! I'm a high school student with a passion for coding. Here you can learn more about my interests and projects."
   },
   "About": {
     "Title": "About Me",
-    "Subtitle": "Hello, my name is Phat. or you can call me pat if you want. I'm a high school student that likes to code. Currently, I'm focused on backend development and currently learning web development and I'm interested in learning more about it. I'm also interested in learning about data-science ways to optimize the searching algorithms and stuff."
+    "Subtitle": "Hello, my name is Phat. or you can call me pat if you want. I'm a high school student that likes to code. Currently, I'm focused on backend development and currently learning web development and I'm interested in learning more about it. I'm also interested in learning about data-science ways to optimize the searching algorithms and stuff.",
+    "Expirence":{
+      "Title": "Expirence"
+    },
+    "Contacts":{
+      "Title": "Contacts"
+    }
+  },
+  "Projects": {
+    "Title": "Projects",
+    "Subtitle": "Here are some of my projects that I've done. I'm currently working on a project that will be released soon. Stay tuned!",
+    "items": [
+      {
+        "name": "BCC Student Searcher",
+        "description": "Search for students in BCC's(bangkok christian college)  public database using their name, or student ID. This is a demo version of the app, so it may not work as expected. This app is not affiliated with BCC in any way.",
+        "author": "Phat Lorthammakun",
+        "version": "Release-Demo",
+        "youtube_embed": "https://www.youtube.com/embed/1hPY_NQADEk",
+        "details": {
+          "GitHub": "https://github.com/EpicCatto/BCC-Student-Searcher-V2",
+          "Website": "https://bss.phatlor.me/"
+        }
+      },
+      {
+        "name": "UwU Anticheat",
+        "description": "UwU Anticheat is an anticheat for a minecraft server version 1.8.8 and 1.12.2 the anticheat focuses on blocking cheats with minimal false positives as posible. (this anticheat have been discontinued)",
+        "author": "NotThatUwU (Phat Lorthammakun)",
+        "version": "1.5.2-dev-bugfix",
+        "youtube_embed": "https://www.youtube.com/embed/ePhZNHKYock",
+        "details": {
+          "Website": "https://www.spigotmc.org/resources/uwu-anticheat-1-8-8-1-12-2-discontinued.92683/"
+        }
+      },
+      {
+        "name": "Advanced Data Path Finding",
+        "description": "The \"Advanced Data Path Finding\" project is a tool to enables advanced data path finding through super advanced data structures and machine-learning AI algorithm. It is designed to provide a more flexible and customizable solution for data path finding than the old pathfinding algorithms. joke aside this project is supposed to be a joke and not be taken seriously.",
+        "author": "Phat Lorthammakun",
+        "version": "Joke",
+        "youtube_embed": "https://www.youtube.com/embed/brV4aeM-S7g",
+        "details": {
+          "GitHub": "https://github.com/EpicCatto/Advanced-Data-Rng-Prediction"
+        }
+      }
+    ]
+  },
+  "Achivement": {
+    "title": "Achievement",
+    "subtitle": "Here are some of my achievements that I've done.",
+    "items": {
+        "Awards": {
+          "title": "Awards",
+          "items": [
+            {
+              "Compitition": "Gamer To Coder",
+              "Team": "2randomstudents",
+              "Year": "2022-10 to 2022-11",
+              "Orginiztion": "Garena & Ministry of Education Thailand",
+              "Position": "Honorable Mention",
+              "Price": "4,000 THB",
+              "image": "/img/awards/gamertocoder.jpg",
+              "source": "/docs/gamertocoder/Proof_of_Reward.pdf"
+            },
+            {
+              "Compitition": "Soon",
+              "Team": "",
+              "Year": "",
+              "Orginiztion": "",
+              "Position": "",
+              "Price": "",
+              "image": "",
+              "source": ""
+            },
+            {
+              "Compitition": "Soon",
+              "Team": "",
+              "Year": "",
+              "Orginiztion": "",
+              "Position": "",
+              "Price": "",
+              "image": "",
+              "source": ""
+            }
+          ]
+        },
+        "Certificates": {
+          "title": "Certificates",
+          "items": [
+            {
+              "name": "mariaonline-ts 2023",
+              "image": "/img/certificates/mariaonline-ts-2023.png"
+            },
+            {
+              "name": "replycode 2023",
+              "image": "/img/certificates/replycode-2023.png"
+            },
+            {
+              "name": "gamertocoder 2022",
+              "image": "/img/certificates/gamertocoder-2022.png"
+            },
+            {
+              "name": "replycode 2022",
+              "image": "/img/certificates/replycode-2022.png"
+            },
+            {
+              "name": "MUICT Smart: Basic C Programming 2023",
+              "image": "/img/certificates/ict-c-languge-2023.png"
+            }
+          ]
+        }
+      }
   }
 }

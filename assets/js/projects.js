@@ -1,17 +1,14 @@
 async function getProjects() {
-    const response = await fetch('/json/projects.json');
-    const data = await response.json();
-    console.log(data);
-    return data;
+    return inData.Projects.items;
 }
 
-function autoDetectProject(){
+function autoDetectProject(inData){
     // get device type if mobile or desktop 
     if (window.innerWidth <= 768){
-        renderProjects(true)
+        renderProjects(true, inData)
         // document.getElementById("pjwarnsel").innerText = "You are using mobile device, some features may not work properly."
     } else {
-        renderProjects(false)
+        renderProjects(false, inData)
         console.log("desktop")
     }
 
@@ -41,7 +38,12 @@ async function renderProjects(datasaver) {
     }
     ).then(() => {
         document.getElementById('p-loading-text').remove();
-    });
+    }).catch(error => {
+        reject(new Error(`"${error}" while loading projects`) );
+        hide();
+    }
+    );
+
 
 }
 
