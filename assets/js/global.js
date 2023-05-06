@@ -154,7 +154,7 @@ function setIndexSection(index){
 }
 
 // window.addEventListener("scroll", lockScrollToSection)
-window.addEventListener("load", handleUrlQuery)
+// window.addEventListener("load", handleUrlQuery)
 window.addEventListener("load", detectSection)
 window.addEventListener("scroll", detectSection)
 window.addEventListener("resize", handleNavbarSize)

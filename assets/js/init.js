@@ -117,7 +117,7 @@ window.onload = function () {
 
     // disable scroll
     document.body.style.overflow = "hidden";
-    $(document.getElementById("site-content")).animate({ opacity: 0 }, 1000);
+    // $(document.getElementById("site-content")).animate({ opacity: 0 }, 1000);
     document.getElementById("site-content").style.display = "none";
   }
   
@@ -126,7 +126,7 @@ window.onload = function () {
     // hide loading
     document.getElementById("loading").style.display = "none";
     handleUrlQuery();
-    $(document.getElementById("site-content")).animate({ opacity: 1 }, 1000);
+    // $(document.getElementById("site-content")).animate({ opacity: 1 }, 1000);
     document.getElementById("site-content").style.display = "block";
     AOS.refresh();
   }
@@ -166,12 +166,13 @@ window.onload = function () {
         render("Loading Awards...");
         autoDetectProject();
         render("Loading projects...");
-        setTimeout(() => {
-          if(!window.location.search.includes("skipLoadingScreen"))
-            checkAssets(resolve, reject, startTime);
-          else
-            resolve();
-        }, 1000);
+        resolve();
+        // setTimeout(() => {
+        //   if(!window.location.search.includes("skipLoadingScreen"))
+        //     checkAssets(resolve, reject, startTime);
+        //   else
+        //     resolve();
+        // }, 1000);
       } catch (error) {
         reject(error);
       }
@@ -183,6 +184,9 @@ window.onload = function () {
   function resolve() {
     console.log("resolve");
     show();
+    setTimeout(() => {
+      handleUrlQuery();
+    }, 500);
   }
   
   function reject(error) {
