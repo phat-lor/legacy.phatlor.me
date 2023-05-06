@@ -20,6 +20,12 @@ async function renderCertificates() {
 //     "image":""
 // }
 function createCertificate(data) {
+    const aos = document.createElement('div');
+    // aos
+    aos.setAttribute('data-aos', 'fade-up');
+    aos.setAttribute('data-aos-delay', '100');
+    aos.setAttribute('data-aos-duration', '500');
+
     const certificate = document.createElement('div');
     certificate.classList.add('certificate');
     const image = document.createElement('img');
@@ -31,10 +37,7 @@ function createCertificate(data) {
     certificate.addEventListener('click', () => {
         window.open(data.image, '_blank');
     });
-    // aos
-    certificate.setAttribute('data-aos', 'fade-up');
-    certificate.setAttribute('data-aos-delay', '100');
-    certificate.setAttribute('data-aos-duration', '500');
 
-    return certificate;
+    aos.appendChild(certificate);
+    return aos;
 }

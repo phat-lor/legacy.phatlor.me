@@ -12,9 +12,9 @@ router.get("/about", (req, res) => {
 
     // loop through the languages from ../lang/**.json abd return the json data
     var lang = {};
-    fs.readdirSync("./lang").forEach(file => {
+    fs.readdirSync("./assets/lang").forEach(file => {
         if (file == curlang + ".json") {
-            lang = JSON.parse(fs.readFileSync("./lang/" + file, "utf8"));
+            lang = JSON.parse(fs.readFileSync("./assets/lang/" + file, "utf8"));
         }
     });
 

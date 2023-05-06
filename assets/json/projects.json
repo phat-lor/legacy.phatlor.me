@@ -4,7 +4,7 @@
         "description":"Search for students in BCC's(bangkok christian college)  public database using their name, or student ID. This is a demo version of the app, so it may not work as expected. This app is not affiliated with BCC in any way.",
         "author":"Phat Lorthammakun",
         "version":"Release-Demo",
-        "image":"/img/bss-showcase.gif",
+        "youtube_embed":"/img/bss-showcase.gif",
         "details":{
             "GitHub":"https://github.com/EpicCatto/BCC-Student-Searcher-V2",
             "Website":"https://bss.phatlor.me/"
@@ -15,7 +15,7 @@
         "description": "UwU Anticheat is an anticheat for a minecraft server version 1.8.8 and 1.12.2 the anticheat focuses on blocking cheats with minimal false positives as posible. (this anticheat have been discontinued)",
         "author": "NotThatUwU (Phat Lorthammakun)",
         "version": "1.5.2-dev-bugfix",
-        "image": "https://cdn.discordapp.com/attachments/979582787105472512/1082313563516973147/java_GdxiNp2ug5.gif",
+        "youtube_embed": "https://cdn.discordapp.com/attachments/979582787105472512/1082313563516973147/java_GdxiNp2ug5.gif",
         "details": {
             "Website": "https://www.spigotmc.org/resources/uwu-anticheat-1-8-8-1-12-2-discontinued.92683/"
         }
@@ -25,7 +25,7 @@
         "description":"The \"Advanced Data Path Finding\" project is a tool to enables advanced data path finding through super advanced data structures and machine-learning AI algorithm. It is designed to provide a more flexible and customizable solution for data path finding than the old pathfinding algorithms. joke aside this project is supposed to be a joke and not be taken seriously.",
         "author":"Phat Lorthammakun",
         "version":"Joke",
-        "image":"https://user-images.githubusercontent.com/72650902/221412837-05d92c1f-9aca-4621-bfee-e2fab5de8e4a.gif",
+        "youtube_embed":"https://user-images.githubusercontent.com/72650902/221412837-05d92c1f-9aca-4621-bfee-e2fab5de8e4a.gif",
         "details":{
             "GitHub":"https://github.com/EpicCatto/Advanced-Data-Rng-Prediction"
         }

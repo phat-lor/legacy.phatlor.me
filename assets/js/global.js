@@ -22,48 +22,6 @@ function setSectionQuery(section){
 }
 
 
-// handle url query
-function handleUrlQuery(){
-    var url = new URL(window.location.href)
-    var query = url.searchParams.get("section")
-    if (query == "about"){
-        toabout()
-    } else if (query == "projects"){
-        toprojects()
-    } else if (query == "achievement"){
-        toachievement()
-    }else {
-        tohome()
-    }
-}
-
-
-function tohome(){
-    // console.log("tohome")
-    document.getElementById("home").scrollIntoView({behavior: "smooth"})
-    setSectionQuery("home")
-}
-
-function toabout(){
-    // console.log("toabout")
-    document.getElementById("about").scrollIntoView({behavior: "smooth"})
-    setSectionQuery("about")
-}
-
-function toprojects(){
-    // console.log("toprojects")
-    document.getElementById("projects").scrollIntoView({behavior: "smooth"})
-    setSectionQuery("projects")
-}
-
-function toachievement(){
-    // console.log("toachievement")
-    document.getElementById("achievement").scrollIntoView({behavior: "smooth"})
-    setSectionQuery("achievement")
-}
-
-
-
 // detect which section is in view
 function detectSection(){
     var home = document.getElementById("home")
@@ -107,6 +65,95 @@ function detectSection(){
     }
 }
 
+// handle url query
+function handleUrlQuery(){
+    var url = new URL(window.location.href)
+    var query = url.searchParams.get("section")
+    if (query == "about"){
+        toabout()
+    } else if (query == "projects"){
+        toprojects()
+    } else if (query == "achievement"){
+        toachievement()
+    }else {
+        tohome()
+    }
+}
+
+
+function tohome(){
+    console.log("tohome")
+    document.getElementById("home").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("home")
+}
+
+function toabout(){
+    console.log("toabout")
+    document.getElementById("about").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("about")
+}
+
+function toprojects(){
+    console.log("toprojects")
+    document.getElementById("projects").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("projects")
+}
+
+function toachievement(){
+    console.log("toachievement")
+    document.getElementById("achievement").scrollIntoView({behavior: "smooth"})
+    setSectionQuery("achievement")
+}
+var lastScrollTop = 0
+var currentSectionIndex = 0
+var lastScrolled = 0
+// 
+function lockScrollToSection(){
+    // disable scrolling
+
+
+    var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    if (st > lastScrollTop) {
+       if (Date.now() - lastScrolled > 1000){
+        console.log("scrolling down")
+           if (currentSectionIndex < 3){
+               currentSectionIndex += 1
+               setIndexSection(currentSectionIndex)
+           }
+           lastScrolled = Date.now()
+       }
+    } else if (st < lastScrollTop) {
+        if (Date.now() - lastScrolled > 1000){
+            console.log("scrolling up")
+            if (currentSectionIndex > 0){
+                currentSectionIndex -= 1
+                setIndexSection(currentSectionIndex)
+            }
+            lastScrolled = Date.now()
+        }
+    } // else was horizontal scroll
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}
+
+function setIndexSection(index){
+    console.log("setIndexSection " + index)
+    switch (index) {
+        case 0:
+            tohome()
+            break;
+        case 1:
+            toabout()
+            break;
+        case 2:
+            toprojects()
+            break;
+        case 3:
+            toachievement()
+            break;
+    }
+}
+
+// window.addEventListener("scroll", lockScrollToSection)
 window.addEventListener("load", handleUrlQuery)
 window.addEventListener("load", detectSection)
 window.addEventListener("scroll", detectSection)

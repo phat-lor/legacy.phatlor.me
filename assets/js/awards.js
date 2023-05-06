@@ -57,6 +57,12 @@ async function renderAwards() {
 
 // only render if the value is not null
 function createAward(data) {
+    const aos = document.createElement('div');
+    // aos
+    aos.setAttribute('data-aos', 'fade-up');
+    aos.setAttribute('data-aos-duration', '1000');
+    
+     
     const award = document.createElement('div');
     award.classList.add('award');
     const image = document.createElement('img');
@@ -96,10 +102,9 @@ function createAward(data) {
         award.addEventListener('click', () => {
             window.open(data.source, '_blank');
         });
-    }
-    // aos
-    award.setAttribute('data-aos', 'fade-up');
-    award.setAttribute('data-aos-duration', '1000');
-    
-    return award;
+    }    
+
+    // award div inside aos div
+    aos.appendChild(award);
+    return aos;
 }

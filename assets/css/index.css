@@ -20,6 +20,7 @@ body {
     color: #ffffff;
     align-items: center;
     overflow: overlay;
+    transition: all 0.5s ease;
 }
 
 .section-1 {
