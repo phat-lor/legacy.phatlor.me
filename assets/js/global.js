@@ -27,12 +27,12 @@ function toggleNavbar(){
         document.getElementById("navitems").classList.remove("navitems--hide")
         document.getElementById("navitems").classList.add("navitems--show")
     }else {
-        // document.getElementById("navitems").style.display = "none"
         document.getElementById("navitems").classList.remove("navitems--show")
         document.getElementById("navitems").classList.add("navitems--hide")
-        setTimeout(() => {
-            document.getElementById("navitems").style.display = "flex"
-        }, 1000);
+        // setTimeout(() => {
+        //     document.getElementById("navitems").style.display = "none"
+        // }
+        // , 700);
     }
 }
 

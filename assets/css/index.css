@@ -233,15 +233,22 @@ body {
     display: flex;
     padding: 10px;
     font-size: 30px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navtogglebar:hover{
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .navitems--show{
-    animation: show 1s forwards;
+    animation: show 0.7s forwards;
 }
 
 .navitems--hide{
-    animation: hide 1s forwards;
+    animation: hide 0.7s forwards;
 }
+
 
 @keyframes show
 {
@@ -252,7 +259,7 @@ body {
 @keyframes hide
 {
     from { opacity: 1; }
-    to   { opacity: 0;}
+    to   { opacity: 0; display: none;}
 }
 
 @media screen and (max-width: 600px) {
