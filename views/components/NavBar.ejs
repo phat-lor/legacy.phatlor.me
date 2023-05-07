@@ -3,8 +3,8 @@
         <p class="head">
             <%= lang.NavTitle %>
         </p>
-        
-        <!-- <div class="navitems"> -->
+
+        <div class="navitems" id="navitems">
         <!-- get all the NavItems -->
         <% for (let i=0; i < Object.keys(lang.NavItems).length; i++) { %>
             <!-- add onclick event redirect and add class active if its on the same oa -->
@@ -12,5 +12,7 @@
                 <%= lang.NavItems[i].title %>
             </p>
             <% } %>
+        </div>
+        <i class="fa fa-bars navtogglebar" id="navtoggle" aria-hidden="true" onclick="toggleNavbar()"></i>
     </div>
 </div>

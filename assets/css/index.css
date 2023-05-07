@@ -198,6 +198,8 @@ body {
     color: #ffffff;
     text-decoration: none;
     transition: 0.5s;
+    /* round */
+    border-radius: 10px;
     /* make the text 1 line */
     white-space: nowrap;
     /* border: rgb(255, 255, 255) 1px solid; */
@@ -215,6 +217,62 @@ body {
     background-color: #2222228e;
 }
 
+.navitems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    align-items: center;
+    text-align: center;
+    /* border: rgb(255, 255, 255) 1px solid; */
+    transition: 1s;
+}
+
+.navtogglebar{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.navitems--show{
+    animation: show 1s forwards;
+}
+
+.navitems--hide{
+    animation: hide 1s forwards;
+}
+
+@keyframes show
+{
+    from { opacity: 0;}
+    to   { opacity: 1; }
+}
+
+@keyframes hide
+{
+    from { opacity: 1; }
+    to   { opacity: 0;}
+}
+
+@media screen and (max-width: 600px) {
+    
+    /* vertical */
+    .navitems {
+        flex-direction: column;
+        transform: translateY(65%) translateX(30%);
+        /* blur background */
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        /* glow */
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        /* background glow */
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        display: none;
+    }
+    
+}
 
 * {
     /* disable select */

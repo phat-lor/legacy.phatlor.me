@@ -1,17 +1,38 @@
 // navbar
 
 navbarsmall = false
+navsmallenable = false
 
 function handleNavbarSize(){
     if (window.innerWidth <= 768){
         if (!navbarsmall){
             navbarsmall = true
-            // document.getElementById("navbar").classList.add("navbar-small")
+            // hide navbar
+            document.getElementById("navitems").style.display = "none"
+            document.getElementById("navtoggle").style.display = "flex"
         }
     } else {
+        document.getElementById("navtoggle").style.display = "none"
+        // 
         if (navbarsmall){
             navbarsmall = false
         }
+    }
+}
+
+function toggleNavbar(){
+    navsmallenable = !navsmallenable
+    if (navsmallenable){
+        document.getElementById("navitems").style.display = "flex"
+        document.getElementById("navitems").classList.remove("navitems--hide")
+        document.getElementById("navitems").classList.add("navitems--show")
+    }else {
+        // document.getElementById("navitems").style.display = "none"
+        document.getElementById("navitems").classList.remove("navitems--show")
+        document.getElementById("navitems").classList.add("navitems--hide")
+        setTimeout(() => {
+            document.getElementById("navitems").style.display = "flex"
+        }, 1000);
     }
 }
 
@@ -24,6 +45,7 @@ function setSectionQuery(section){
 
 // detect which section is in view
 function detectSection(){
+    handleNavbarSize()
     var home = document.getElementById("home")
     var about = document.getElementById("about")
     var projects = document.getElementById("projects")
@@ -82,24 +104,36 @@ function handleUrlQuery(){
 
 
 function tohome(){
+    if(navsmallenable && navbarsmall){
+        toggleNavbar()
+    }
     console.log("tohome")
     document.getElementById("home").scrollIntoView({behavior: "smooth"})
     setSectionQuery("home")
 }
 
 function toabout(){
+    if(navsmallenable && navbarsmall){
+        toggleNavbar()
+    }
     console.log("toabout")
     document.getElementById("about").scrollIntoView({behavior: "smooth"})
     setSectionQuery("about")
 }
 
 function toprojects(){
+    if(navsmallenable && navbarsmall){
+        toggleNavbar()
+    }
     console.log("toprojects")
     document.getElementById("projects").scrollIntoView({behavior: "smooth"})
     setSectionQuery("projects")
 }
 
 function toachievement(){
+    if(navsmallenable && navbarsmall){
+        toggleNavbar()
+    }
     console.log("toachievement")
     document.getElementById("achievement").scrollIntoView({behavior: "smooth"})
     setSectionQuery("achievement")

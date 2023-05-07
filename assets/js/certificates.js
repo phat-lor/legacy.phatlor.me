@@ -1,5 +1,5 @@
 async function getCertificates() {
-    return inData.Achivement.items.Certificates.items;
+    return inData.Achievement.items.Certificates.items;
 }
 
 async function renderCertificates() {

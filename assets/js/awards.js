@@ -1,5 +1,5 @@
 async function getAwards() {
-    return inData.Achivement.items.Awards.items;
+    return inData.Achievement.items.Awards.items;
 }
 
 async function renderAwards() {
