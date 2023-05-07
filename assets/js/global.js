@@ -40,6 +40,7 @@ function setSectionQuery(section){
     window.history.pushState({}, "", url)
 }
 
+var curSectionIndex = 0
 
 // detect which section is in view
 function detectSection(){
@@ -58,30 +59,35 @@ function detectSection(){
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
         navbarLinks[3].classList.remove("navbar-link-active")
+        curSectionIndex = 0;
         // setSectionQuery("home")
     } else if (aboutRect.top <= 0 && aboutRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.add("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
         navbarLinks[3].classList.remove("navbar-link-active")
+        curSectionIndex = 1;
         // setSectionQuery("about")
     } else if (projectsRect.top <= 0 && projectsRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.add("navbar-link-active")
         navbarLinks[3].classList.remove("navbar-link-active")
+        curSectionIndex = 2;
         // setSectionQuery("projects")
     } else if(achievementRect.top <= 0 && achievementRect.bottom > 0){
         navbarLinks[0].classList.remove("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
         navbarLinks[3].classList.add("navbar-link-active")
+        curSectionIndex = 3;
         // setSectionQuery("achievement")
     }else {
         navbarLinks[0].classList.add("navbar-link-active")
         navbarLinks[1].classList.remove("navbar-link-active")
         navbarLinks[2].classList.remove("navbar-link-active")
         navbarLinks[3].classList.remove("navbar-link-active")
+        curSectionIndex = 0;
     }
 }
 
@@ -146,6 +152,7 @@ function langTH(){
 }
 
 function lang(lang){
+    setIndexSection (curSectionIndex)
     var url = new URL(window.location.href)
     url.searchParams.set("lang", lang)
     window.history.pushState({}, "", url)
