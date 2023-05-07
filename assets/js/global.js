@@ -9,10 +9,8 @@ function handleNavbarSize(){
             navbarsmall = true
             // hide navbar
             document.getElementById("navitems").style.display = "none"
-            document.getElementById("navtoggle").style.display = "flex"
         }
     } else {
-        document.getElementById("navtoggle").style.display = "none"
         // 
         if (navbarsmall){
             navbarsmall = false
@@ -138,6 +136,22 @@ function toachievement(){
     document.getElementById("achievement").scrollIntoView({behavior: "smooth"})
     setSectionQuery("achievement")
 }
+
+function langEN(){
+    lang("en")
+}
+
+function langTH(){
+    lang("th")
+}
+
+function lang(lang){
+    var url = new URL(window.location.href)
+    url.searchParams.set("lang", lang)
+    window.history.pushState({}, "", url)
+    location.reload()
+}
+
 var lastScrollTop = 0
 var currentSectionIndex = 0
 var lastScrolled = 0
@@ -186,6 +200,7 @@ function setIndexSection(index){
             break;
     }
 }
+
 
 // window.addEventListener("scroll", lockScrollToSection)
 // window.addEventListener("load", handleUrlQuery)

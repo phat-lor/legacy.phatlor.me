@@ -16,6 +16,10 @@
     {
       "title": "Achievement",
       "link": "toachievement();"
+    },
+    {
+      "title": "Lang: EN",
+      "link": "langEN();"
     }
   ],
   "Home": {

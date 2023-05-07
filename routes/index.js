@@ -1,29 +1,22 @@
 var router = require("express").Router();
 var fs = require("fs");
 
+// file deepcode ignore NoRateLimitingForExpensiveWebOperation: Already have rate limit in the index.js
+
 router.get("/", (req, res) => {
-
-    // get cookie
-    var curlang = req.cookies.languge;
-    if (curlang == undefined) {
+    let curlang = req.query.lang;
+    if (curlang == undefined || curlang == null || curlang == "") {
         curlang = "en";
-        res.cookie("languge", curlang);
     }
-
-    // loop through the languages from ../lang/**.json abd return the json data
+    if (!/^[a-zA-Z0-9-_]+$/.test(curlang) || typeof curlang !== 'string') {
+        return res.redirect(`/error?error=Invalid language parameter "${curlang}". Please click the "go back home" button. If the problem still appears, please contact me.`);
+    }
     var lang = {};
-    fs.readdirSync("./assets/lang").forEach(file => {
-        if (file == curlang + ".json") {
-            lang = JSON.parse(fs.readFileSync("./assets/lang/" + file, "utf8"));
-        }
-    });
-    // console.log("Language: " + curlang);
-    // check if the language is not found
-    if (Object.keys(lang).length === 0) {
-        res.cookie("languge", "en");
+    try {
+        lang = JSON.parse(fs.readFileSync("./assets/lang/" + curlang.toLocaleLowerCase()+".json", "utf8"));
+    } catch (error) {
         return res.redirect(`/error?error=Language "${curlang}" not found this error should be automatically fixed. Please click the "go back home" button. If the problem still appears, please contact me.`)
     }
-    // console.log(lang);
 
     res.render("index", {lang: lang});
 });
@@ -31,10 +24,5 @@ router.get("/", (req, res) => {
 router.get("/home" , (req, res) => {
     res.redirect("/");
 });
-
-// router.post ("/", (request, response) => {
-//     var data = request.body;
-//     response.send(data);
-// });
 
 module.exports = router;

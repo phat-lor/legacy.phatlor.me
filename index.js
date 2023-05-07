@@ -2,6 +2,10 @@ var express = require('express')
 var path = require('path');
 var cookieParser = require('cookie-parser')
 
+const rateLimit = require('express-rate-limit')
+
+
+
 require('dotenv').config();
 
 
@@ -18,6 +22,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser())
 
 app.enable("trust proxy"); // only if you're behind a reverse proxy (Heroku, Bluemix, AWS ELB, Nginx, etc)
+
+const limiter = rateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: 100 // limit each IP to 100 requests per windowMs
+})
+//  apply to all requests
+app.use(limiter)
 
 //Routes 
 require("fs")

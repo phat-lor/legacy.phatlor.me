@@ -2,13 +2,13 @@ async function getProjects() {
     return inData.Projects.items;
 }
 
-function autoDetectProject(inData){
+function autoDetectProject(){
     // get device type if mobile or desktop 
     if (window.innerWidth <= 768){
-        renderProjects(true, inData)
+        renderProjects(true)
         // document.getElementById("pjwarnsel").innerText = "You are using mobile device, some features may not work properly."
     } else {
-        renderProjects(false, inData)
+        renderProjects(false)
         console.log("desktop")
     }
 

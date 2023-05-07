@@ -1,6 +1,8 @@
 var router = require("express").Router();
 var fs = require("fs");
 
+// file deepcode ignore NoRateLimitingForExpensiveWebOperation: Already have rate limit in the index.js
+
 router.get("/error", (req, res) => {
     const error = req.query.error;
 
