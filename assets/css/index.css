@@ -308,12 +308,12 @@ body {
     to   { opacity: 0; display: none;}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     
     /* vertical */
     .navitems {
         flex-direction: column;
-        transform: translateY(65%) translateX(30%);
+        transform: translateY(65%) translateX(60%);
         /* blur background */
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
