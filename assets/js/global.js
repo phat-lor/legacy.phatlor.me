@@ -2,6 +2,44 @@
 
 navbarsmall = false
 navsmallenable = false
+darkmode = false
+
+function initLightDarkMode(){
+    darkmode = window.matchMedia("(prefers-color-scheme: dark)").matches
+    if (darkmode){
+        initDarkMode()
+    }
+    else {
+        initLightMode()
+    }
+}
+
+function toggleDarkMode(){
+    darkmode = !darkmode
+    if (darkmode){
+        initDarkMode()
+    }
+    else {
+        initLightMode()
+    }
+}
+
+function initLightMode(){
+    document.getElementById("main").classList.remove("dark-mode")
+    document.getElementById("lightdarktoggle").classList.remove("fa-moon")
+    document.getElementById("lightdarktoggle").classList.add("fa-solid")
+    document.getElementById("lightdarktoggle").classList.add("fa-lightbulb")
+    document.body.classList.remove("darkmode")
+}
+
+function initDarkMode(){
+    document.getElementById("lightdarktoggle").classList.remove("fa-lightbulb")
+    document.getElementById("lightdarktoggle").classList.add("fa-solid")
+    document.getElementById("lightdarktoggle").classList.add("fa-moon")
+    // add darkmode class to html
+    document.getElementById("main").classList.add("dark-mode")
+}
+
 
 function handleNavbarSize(){
     if (window.innerWidth <= 768){
@@ -211,6 +249,7 @@ function setIndexSection(index){
 
 // window.addEventListener("scroll", lockScrollToSection)
 // window.addEventListener("load", handleUrlQuery)
+window.addEventListener("load", initLightDarkMode)
 window.addEventListener("load", detectSection)
 window.addEventListener("scroll", detectSection)
 window.addEventListener("resize", handleNavbarSize)

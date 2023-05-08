@@ -1,3 +1,33 @@
+:root {
+    background-color: #222222;
+    color: #ffffff;
+    align-items: center;
+    overflow: overlay;
+    transition: all 0.5s ease;
+
+    --gradient-color1: linear-gradient(180deg, rgba(248, 118, 242, 0.9), rgba(59, 187, 247, 0.9));
+    --gradient-color2: linear-gradient(180deg, rgba(59, 187, 247, 0.9), rgba(119, 212, 255, 0.9));
+    --gradient-color3: linear-gradient(180deg, rgba(119, 212, 255, 0.9), rgba(58, 192, 255, 0.9));
+    --gradient-color4: linear-gradient(180deg, rgba(58, 192, 255, 0.9), rgba(248, 118, 242, 0.9));
+    --gradient-color5: linear-gradient(180deg, rgba(248, 118, 242, 0.9), rgba(248, 118, 242, 0.9));
+}
+
+:root.dark-mode{
+    background-color: #222222;
+    color: #ffffff;
+    align-items: center;
+    overflow: overlay;
+    transition: all 0.5s ease;
+
+    --gradient-color1: linear-gradient(180deg, rgba(68, 0, 62, 0.9), rgba(0, 22, 45, 0.9));
+    --gradient-color2: linear-gradient(180deg, rgba(0, 22, 45, 0.9), rgba(26, 52, 81, 0.9));
+    --gradient-color3: linear-gradient(180deg, rgba(26, 52, 81, 0.9), rgba(0, 22, 45, 0.9));
+    --gradient-color4: linear-gradient(180deg, rgba(0, 22, 45, 0.9), rgba(68, 0, 62, 0.9));
+    --gradient-color5: linear-gradient(180deg, rgba(68, 0, 62, 0.9), rgba(68, 0, 62, 0.9));
+    transition: all 0.5s ease;
+
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     background: #2222226e;
@@ -23,6 +53,7 @@ body {
     transition: all 0.5s ease;
 }
 
+
 .section-1 {
     width: 100%;
     height: 100vh;
@@ -37,7 +68,7 @@ body {
     /* shadow around the section */
     /* load image form url */
     /* background-image: url(https://tr.rbxcdn.com/fba2b726e48cc00a29565e301bb4db8b/500/280/Image/Jpeg); */
-    background-image: linear-gradient(180deg, rgba(248, 118, 242, 0.9), rgba(59, 187, 247, 0.9));
+    background-image: var(--gradient-color1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -133,7 +164,7 @@ body {
     background-color: #ff7bf8;
     /* load image form url */
     /* background-image: url(https://tr.rbxcdn.com/fba2b726e48cc00a29565e301bb4db8b/500/280/Image/Jpeg); */
-    background-image: linear-gradient(180deg, rgba(59, 187, 247, 0.9),  rgba(119, 212, 255, 0.9));
+    background-image: var(--gradient-color2);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -250,6 +281,20 @@ body {
     animation: hide 0.7s forwards;
 }
 
+#lightdarktoggle{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    transition: 1s;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+#lightdarktoggle:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 
 @keyframes show
 {
@@ -316,7 +361,7 @@ button{
 
 .footer {
     background-color: #ff7bf8;
-    background-image: linear-gradient(180deg, rgba(248, 118, 242, 0.9), rgba(248, 118, 242, 0.9));
+    background-image: var(--gradient-color5);
     backdrop-filter: blur(10px);
     font: 15px/1.5 'Roboto', sans-serif;
     font-weight: 100;

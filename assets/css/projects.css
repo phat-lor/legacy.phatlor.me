@@ -96,7 +96,7 @@
 /* fade */
 .container-p{
     background-color: #ff7bf8;
-    background-image: linear-gradient(180deg, rgba(119, 212, 255, 0.9), rgba(58, 192, 255, 0.9));
+    background-image: var(--gradient-color3);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -114,7 +114,7 @@
 @media screen and (max-width: 600px) {
     .container-p{
         background-color: #ff7bf8;
-        background-image: linear-gradient(180deg, rgba(119, 212, 255, 0.9), rgba(58, 192, 255, 0.9));
+        background-image: var(--gradient-color3);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
