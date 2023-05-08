@@ -181,6 +181,15 @@ function toachievement(){
     setSectionQuery("achievement")
 }
 
+function toblog(){
+    if(navsmallenable && navbarsmall){
+        toggleNavbar()
+    }
+    console.log("toblog")
+    window.open("https://blog.phatlor.me", "_blank")
+
+}
+
 function langEN(){
     lang("en")
 }

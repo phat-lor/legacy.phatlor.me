@@ -18,6 +18,10 @@
       "link": "toachievement();"
     },
     {
+      "title": "Blog",
+      "link": "toblog();"
+    },
+    {
       "title": "Lang: TH",
       "link": "langTH();"
     }
