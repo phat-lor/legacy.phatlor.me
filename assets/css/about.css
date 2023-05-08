@@ -95,16 +95,16 @@
 /* mobile support */
 @media screen and (max-width: 600px) {
     .aboutcontainer .title {
-        font-size: 20px;
+        font-size: 30px;
     }
     .aboutcontainer .abtmestyle{
         display: grid;
     }
     .aboutcontainer .contact .contacts {
-        font-size: 20px;
+        font-size: 40px;
     }
     .aboutcontainer .description {
-        font-size: 10px;
+        font-size: 20px;
     }
     .aboutcontainer {
         max-width: 100vw;

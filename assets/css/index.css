@@ -144,10 +144,10 @@ body {
 /* section 1 mobile support */
 @media screen and (max-width: 600px) {
     .section-1 .title {
-        font-size: 20px;
+        font-size: 30px;
     }
     .section-1 .description {
-        font-size: 10px;
+        font-size: 20px;
     }
 }
 
@@ -313,7 +313,7 @@ body {
     /* vertical */
     .navitems {
         flex-direction: column;
-        transform: translateY(65%) translateX(60%);
+        transform: translateY(60%) translateX(60%);
         /* blur background */
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
@@ -322,6 +322,7 @@ body {
         /* background glow */
         background: rgba(0, 0, 0, 0.1);
         z-index: 10;
+        padding: 5px;
     }
     
 }
