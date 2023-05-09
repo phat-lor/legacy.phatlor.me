@@ -200,6 +200,9 @@
     .exp-container .logo{
         margin-bottom: 30px;
     }
+    .exp-container{
+        max-width: 80vw;
+    }
     
 }
 
