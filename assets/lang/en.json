@@ -33,8 +33,20 @@
   "About": {
     "Title": "About Me",
     "Subtitle": "Hello, my name is Phat. or you can call me pat if you want. I'm a high school student that likes to code. Currently, I'm focused on backend development and currently learning web development and I'm interested in learning more about it. I'm also interested in learning about data-science ways to optimize the searching algorithms and stuff.",
-    "Expirence":{
-      "Title": "Expirence"
+    "Experiences":{
+      "Title": "Experiences",
+      "Works": [
+        {
+          "title": "Elysium - Java Developer - Freelance",
+          "details": "Elysium is the best Lua scripting utility for Minecraft 1.8.9. I worked on their Injected client jar. which includes a lot of feature such as lua script handling, client packet, client rendering, and much more more.",
+          "images": [
+            {
+              "src": "https://darrennathanael.com/assets/elysium/elysium-1661361315417.webp",
+              "height": 713
+            }
+          ]
+        }
+      ]
     },
     "Contacts":{
       "Title": "Contacts"

@@ -4,6 +4,7 @@
     align-items: center;
     overflow: overlay;
     transition: all 0.5s ease;
+    font-family: 'Roboto', sans-serif;
 
     --gradient-color1: linear-gradient(180deg, rgba(248, 118, 242, 0.9), rgba(59, 187, 247, 0.9));
     --gradient-color2: linear-gradient(180deg, rgba(59, 187, 247, 0.9), rgba(119, 212, 255, 0.9));
@@ -144,24 +145,28 @@ body {
 /* section 1 mobile support */
 @media screen and (max-width: 600px) {
     .section-1 .title {
-        font-size: 30px;
+        font-size: 25px;
+        margin: 10px;
     }
     .section-1 .description {
-        font-size: 20px;
+        font-size: 15px;
+        margin: 10px;
     }
 }
 
 .section-2 {
     width: 100%;
-    height: 100vh;
-    ;
+    height: 130vh;
     /* border: rgb(255, 255, 255) 1px solid; */
     /* margin: 20px auto; */
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
     background-color: #ff7bf8;
+    /* make everything center */
+    justify-content: center;
+    
     /* load image form url */
     /* background-image: url(https://tr.rbxcdn.com/fba2b726e48cc00a29565e301bb4db8b/500/280/Image/Jpeg); */
     background-image: var(--gradient-color2);
@@ -181,6 +186,18 @@ body {
     display: flex;
 }
 
+
+/* tablet */
+@media screen and (max-width: 1199px) {
+    .section-2 {
+        /* nvm */
+        /* make items align go vertical
+        flex-direction: column;
+        justify-content: center; */
+    }
+
+}
+    
 
 .navbar {
     width: 100%;

@@ -160,6 +160,8 @@ window.onload = function () {
       try {
         if(inData == null || inData == undefined || inData=="") throw new Error("Language data not found or invalid failed to load?");
         init();
+        render("Loading Works...");
+        renderWorks();
         render("Loading projects...");
         renderCertificates();
         render("Loading Certificates...");
