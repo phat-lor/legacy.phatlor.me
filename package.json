@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "dev": "concurrently \"nodemon .\""
+    "dev": "concurrently \"nodemon .\"",
+    "ulh-prod": "npx unlighthouse --site phatlor.me",
+    "ulh-local": "npx unlighthouse --site http://127.0.0.1:5000"
   },
   "author": "Phat Lorthammakun",
   "license": "ISC",
@@ -18,7 +20,8 @@
     "express": "^4.18.1",
     "express-rate-limit": "^6.7.0",
     "fs": "^0.0.1-security",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "puppeteer": "^20.1.2"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",
