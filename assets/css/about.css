@@ -102,14 +102,13 @@
     margin: 5px;
     padding: 5px;
     max-width: 60vw;
-    margin-left: 20px;
+    
 
     /* align items with new line */
     align-items: center;
     justify-content: center;
     /* flex direction */
     flex-direction: column;
-
 }
 
 .exp-container .title{

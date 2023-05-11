@@ -190,6 +190,7 @@ body {
 /* tablet */
 @media screen and (max-width: 1199px) {
     .section-2 {
+        height: 100%;
         /* nvm */
         /* make items align go vertical
         flex-direction: column;
