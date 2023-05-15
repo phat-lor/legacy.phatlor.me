@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/achievement.css">
+<link rel="stylesheet" href="css/load.css">
+        <!-- load scripts -->
+    <script src="https://kit.fontawesome.com/955d8ce723.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <meta name="description" content="Phat Lorthammakun. I'm a High School student, I like coding!">
+<meta name="keywords" content="phat, Phat Lorthammakun, ภัทร">
+<meta name="author" content="Phat.lor">
+    <meta content="Phat Lorthammakun" property="og:title" />
+<meta content="Hello my name is Phat Lorthammakun. I'm a High School student, and I like coding!"
+    property="og:description" />
+<meta content="https://phatlor.me" property="og:url" />
+<meta content="https://epiccatto.dev/img/mrshark.png" property="og:image" />
+<meta content="#4e99cc" data-react-helmet="true" name="theme-color" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Phat Lor</title>
+</head>
+
+
+<body>
+  <div id = "loading">
+    <div id ="loading-container">
+      
+    </div>
+  </div>
+  <div id = "site-content" style="display: none;">
+    <div class="navbar">
+    <div class="container data-i18n">
+        <p class="head">
+            Phat Lorthammakun
+        </p>
+
+        <div class="navitems" id="navitems">
+        <!-- get all the NavItems -->
+        
+            <!-- add onclick event redirect and add class active if its on the same oa -->
+            <p class="item navbar-link" onclick="tohome();">
+                Home
+            </p>
+            
+            <!-- add onclick event redirect and add class active if its on the same oa -->
+            <p class="item navbar-link" onclick="toabout();">
+                About
+            </p>
+            
+            <!-- add onclick event redirect and add class active if its on the same oa -->
+            <p class="item navbar-link" onclick="toprojects();">
+                Projects
+            </p>
+            
+            <!-- add onclick event redirect and add class active if its on the same oa -->
+            <p class="item navbar-link" onclick="toachievement();">
+                Achievement
+            </p>
+            
+            <!-- add onclick event redirect and add class active if its on the same oa -->
+            <p class="item navbar-link" onclick="toblog();">
+                Blog
+            </p>
+            
+            <!-- add onclick event redirect and add class active if its on the same oa -->
+            <p class="item navbar-link" onclick="langTH();">
+                Lang: TH
+            </p>
+            
+        </div>
+        <!-- light/dark moded -->
+        <i id="lightdarktoggle" aria-hidden="true" onclick="toggleDarkMode()"></i>
+        <i class="fa fa-bars navtogglebar" id="navtoggle" aria-hidden="true" onclick="toggleNavbar()"></i>
+    </div>
+</div>
+    <section class="section-1" id="home">
+    <div data-aos="zoom-out-up" >
+    <div class="stringcontainer">
+        <h1 class="title">
+            Phat Lorthammakun
+        </h1>
+        <p class="description">
+            Welcome to my website! I&#39;m a high school student with a passion for coding. Here you can learn more about my interests and projects.
+        </p>
+    </div>
+</div>
+</section>
+    <section class="section-2" id="about">
+    <!-- make everything center -->
+    <div data-aos="zoom-in-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+    <div class="aboutcontainer">
+        <div class="abtmestyle">
+                <h1 class="title">
+                    About Me
+                </h1>
+                <br>
+                <div>
+                    <p class="description">
+                        Hello, my name is Phat. or you can call me pat if you want. I&#39;m a high school student that likes to code. Currently, I&#39;m focused on backend development and currently learning web development and I&#39;m interested in learning more about it. I&#39;m also interested in learning about data-science ways to optimize the searching algorithms and stuff.
+                </div>
+                <div class="contact">
+                    <br>
+                    <p class="title">Contacts</p>
+                    <br>
+                    <a href="https://discord.com/users/531802615202316298" target="_blank" class="contacts discord">
+                        <i class="fab fa-discord"  width="10px"></i>
+                    </a>
+                    <a href="https://github.com/EpicCatto" target="_blank" class="contacts github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@phatlor" target="_blank" class="contacts youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/phat.lor/" target="_blank" class="contacts instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/EpicCatto4321" target="_blank" class="contacts twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:contact@phatlor.me" target="_blank" class="contacts email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in-down" data-aos-duration="1000">
+
+    <div class="exp-container">
+        <p class='title'>Experiences</p>
+        <br>
+        <p class="smalltitle">Programming Languages</p>
+        <div>
+            <div class="logos">
+                <!-- load svg -->
+                <div class="logo-contain">
+                    <div class="logo">
+                        <img src="/svg/html-logo.svg" alt="HTML"></img>
+                        <P>HTML</P>
+                        <p>1 yr</p>
+                    </div>
+                    <div class="logo">
+                        <img src="/svg/css-logo.svg" alt="CSS"></img>
+                        <P>CSS</P>
+                        <p>3 mo</p>
+                    </div>
+                    <div class="logo">
+                        <img src="/svg/js-logo.svg" alt="JavaScript"></img>
+                        <P>JavaScript</P>
+                        <p>2 yr</p>
+                    </div>
+                    <div class="logo">
+                        <img src="/svg/python-logo.svg" alt="Python"></img>
+                        <P>Python</P>
+                        <p>>2 mo</p>
+                    </div>
+                </div>
+                <br>
+                <div class="logo-contain">
+                    <div class="logo">
+                        <img src="/svg/java-logo.svg" alt="Java"></img>             
+                        <P>HTML</P>
+                        <p>3 yr</p>
+                    </div>
+                    <div class="logo">
+                        <img src="/svg/nextjs-logo.svg" alt="NextJS"></img>
+                        <P>Next</P>
+                        <p>>2 mo</p>
+                    </div>
+                    <div class="logo">
+                        <img src="/svg/nodejs-logo.svg" alt="NodeJS"></img>
+                        <P>Node</P>
+                        <p>2 yr</p>
+                    </div>
+                    <div class="logo">
+                        <img src="/svg/csharp-logo.svg" alt="CSharp"></img>
+                        <P>C#</P>
+                        <p>10 mo</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <br>
+        <p class="smalltitle">Work</p>
+        <div id="works-container">
+
+        </div>
+        </div>
+    </div>
+</section>
+
+     <!--  projects -->
+ <div class="container-p" id="projects">
+    <!-- started after navbar -->
+    <br><br><br><br>
+    <h1 class="title" data-aos="zoom-in-down">Projects</h1>
+    <br><br><br><br>
+    <div class="load-option-box" id="pjwarnsel">
+        <p class="title">Hold on! please select your data settings this is for your own good</p>
+        <!-- Data saver(Only title and description, basic information) and Normal(Can take up to 200mb to load assets) -->
+        <!-- description explains -->
+        <p class="description">Data saver will only load the title and description of the project, this is for people with slow internet connection or people who don't want to load the assets of the project. Normal will load the assets of the project, this is for people with fast internet connection or people who want to load the assets of the project.</p>
+        <br><br><br><br>
+        <div class="options">
+            <button class="btn btn-primary" id="data-saver" onclick="renderProjects(true)">Data Saver (Recommended)</button>
+            <button class="btn btn-primary" id="normal" onclick="renderProjects(false)">Normal</button>
+        </div>
+        <br>
+    </div>
+
+    <div class="projects-container">
+    </div>
+    <br><br><br><br>
+
+</div>
+
+<script src="js/projects.js"></script>
+    <div class="achievement-container"  id="achievement">
+    <br><br><br><br><br><br><br>
+    <p class="title" data-aos="zoom-in-up">Achievement</p>
+    <br><br>
+    <!-- awards -->
+    <div class="container-a">
+        <p class="title" data-aos="zoom-in-up" data-aos-delay="100">Awards</p>
+        <div class="awards-container">
+        </div>
+    </div>
+    <!-- certificates -->
+    <div class="container-c" >
+        <p class="title" data-aos="zoom-in-up">Certificates</p>
+        <div class="certificates-container">
+        </div>
+    </div>    
+</div>
+    <div class="footer">
+    <br><br><br><br>
+    <center>
+        <p>Copyright © Phat Lorthammakun 2022 - 2023</p>
+        <div>
+            <a href="">Source Code</a>
+            -
+            <a href="https://bss.phatlor.me/terms">Privacy Policy/Terms</a>
+        </div>    
+    </center>
+</div>
+  </div>
+    <script src="js/unsupportedscreen.js"></script>
+    <script src="js/certificates.js"></script>
+    <script src="js/awards.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/disablescroll.js"></script>
+    <script src="js/works.js"></script>
+    <!-- <script src="js/scrollanimation.js"></script> -->
+    <script>
+      // load();
+      // hide();
+      // init();
+      // renderCertificates();
+      // renderAwards();
+      var inData = {"NavTitle":"Phat Lorthammakun","NavItems":[{"title":"Home","link":"tohome();"},{"title":"About","link":"toabout();"},{"title":"Projects","link":"toprojects();"},{"title":"Achievement","link":"toachievement();"},{"title":"Blog","link":"toblog();"},{"title":"Lang: TH","link":"langTH();"}],"Home":{"Title":"Phat Lorthammakun","Subtitle":"Welcome to my website! I'm a high school student with a passion for coding. Here you can learn more about my interests and projects."},"About":{"Title":"About Me","Subtitle":"Hello, my name is Phat. or you can call me pat if you want. I'm a high school student that likes to code. Currently, I'm focused on backend development and currently learning web development and I'm interested in learning more about it. I'm also interested in learning about data-science ways to optimize the searching algorithms and stuff.","Experiences":{"Title":"Experiences","Works":[{"title":"Elysium - Java Developer - Freelance","details":"Elysium is the best Lua scripting utility for Minecraft 1.8.9. I worked on their Injected client jar. which includes a lot of feature such as lua script handling, client packet, client rendering, and much more more.","images":[{"src":"https://darrennathanael.com/assets/elysium/elysium-1661361315417.webp","height":713}]}]},"Contacts":{"Title":"Contacts"}},"Projects":{"Title":"Projects","Subtitle":"Here are some of my projects that I've done. I'm currently working on a project that will be released soon. Stay tuned!","items":[{"name":"BCC Student Searcher","description":"Search for students in BCC's(bangkok christian college)  public database using their name, or student ID. This is a demo version of the app, so it may not work as expected. This app is not affiliated with BCC in any way.","author":"Phat Lorthammakun","version":"Release-Demo","youtube_embed":"https://www.youtube.com/embed/1hPY_NQADEk","details":{"GitHub":"https://github.com/EpicCatto/BCC-Student-Searcher-V2","Website":"https://bss.phatlor.me/"}},{"name":"UwU Anticheat","description":"UwU Anticheat is an anticheat for a minecraft server version 1.8.8 and 1.12.2 the anticheat focuses on blocking cheats with minimal false positives as posible. (this anticheat have been discontinued)","author":"NotThatUwU (Phat Lorthammakun)","version":"1.5.2-dev-bugfix","youtube_embed":"https://www.youtube.com/embed/ePhZNHKYock","details":{"Website":"https://www.spigotmc.org/resources/uwu-anticheat-1-8-8-1-12-2-discontinued.92683/"}},{"name":"Advanced Data Path Finding","description":"The \"Advanced Data Path Finding\" project is a tool to enables advanced data path finding through super advanced data structures and machine-learning AI algorithm. It is designed to provide a more flexible and customizable solution for data path finding than the old pathfinding algorithms. joke aside this project is supposed to be a joke and not be taken seriously.","author":"Phat Lorthammakun","version":"Joke","youtube_embed":"https://www.youtube.com/embed/brV4aeM-S7g","details":{"GitHub":"https://github.com/EpicCatto/Advanced-Data-Rng-Prediction"}}]},"Achievement":{"title":"Achievement","subtitle":"Here are some of my achievements that I've done.","items":{"Awards":{"title":"Awards","items":[{"Compitition":"Gamer To Coder","Team":"2randomstudents","Year":"2022-10 to 2022-11","Orginiztion":"Garena & Ministry of Education Thailand","Position":"Honorable Mention","Price":"4,000 THB","image":"/img/awards/gamertocoder.jpg","source":"/docs/gamertocoder/Proof_of_Reward.pdf"},{"Compitition":"Soon","Team":"","Year":"","Orginiztion":"","Position":"","Price":"","image":"","source":""},{"Compitition":"Soon","Team":"","Year":"","Orginiztion":"","Position":"","Price":"","image":"","source":""}]},"Certificates":{"title":"Certificates","items":[{"name":"mariaonline-ts 2023","image":"/img/certificates/mariaonline-ts-2023.png"},{"name":"replycode 2023","image":"/img/certificates/replycode-2023.png"},{"name":"gamertocoder 2022","image":"/img/certificates/gamertocoder-2022.png"},{"name":"replycode 2022","image":"/img/certificates/replycode-2022.png"},{"name":"MUICT Smart: Basic C Programming 2023","image":"/img/certificates/ict-c-languge-2023.png"}]}}}}
+      AOS.init();
+
+    </script>
+  </body>
+
+</html>
