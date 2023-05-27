@@ -53,9 +53,21 @@
     }
   },
   "Projects": {
+    
     "Title": "Projects",
     "Subtitle": "Here are some of my projects that I've done. I'm currently working on a project that will be released soon. Stay tuned!",
     "items": [
+      {
+        "name": "SyncedTeach",
+        "description": "SyncedTeach is an *attempt* to make a free and open-source self-hostable school dashboard",
+        "author": "Phat Lorthammakun & mistertfy64(Tinnaphop Choonchuachan)",
+        "version": "Release-Demo",
+        "youtube_embed": "",
+        "details": {
+          "GitHub": "https://github.com/SyncedTeach",
+          "Website": "https://syncedteach.phatlor.me/"
+        }
+      },
       {
         "name": "BCC Student Searcher",
         "description": "Search for students in BCC's(bangkok christian college)  public database using their name, or student ID. This is a demo version of the app, so it may not work as expected. This app is not affiliated with BCC in any way.",
@@ -75,16 +87,6 @@
         "youtube_embed": "https://www.youtube.com/embed/ePhZNHKYock",
         "details": {
           "Website": "https://www.spigotmc.org/resources/uwu-anticheat-1-8-8-1-12-2-discontinued.92683/"
-        }
-      },
-      {
-        "name": "Advanced Data Path Finding",
-        "description": "The \"Advanced Data Path Finding\" project is a tool to enables advanced data path finding through super advanced data structures and machine-learning AI algorithm. It is designed to provide a more flexible and customizable solution for data path finding than the old pathfinding algorithms. joke aside this project is supposed to be a joke and not be taken seriously.",
-        "author": "Phat Lorthammakun",
-        "version": "Joke",
-        "youtube_embed": "https://www.youtube.com/embed/brV4aeM-S7g",
-        "details": {
-          "GitHub": "https://github.com/EpicCatto/Advanced-Data-Rng-Prediction"
         }
       }
     ]
@@ -131,6 +133,14 @@
         "Certificates": {
           "title": "Certificates",
           "items": [
+            {
+              "name": "MUICT-AST: Introduction to Cybersecurity",
+              "image": "/img/certificates/muict-cybersecurity.png"
+            },
+            {
+              "name": "MUICT-AST: Fundamentals of C Programming",
+              "image": "/img/certificates/muict-c-programing.png"
+            },
             {
               "name": "mariaonline-ts 2023",
               "image": "/img/certificates/mariaonline-ts-2023.png"
