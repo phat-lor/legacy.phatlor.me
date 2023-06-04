@@ -56,9 +56,9 @@ router.put("/management/lang", (req, res) => {
         return res.status(400).json({status: "Bad Request"});
     }
     
-    if(typeof newLang !== 'object') {
-        return res.status(400).json({status: "Bad Request"});
-    }
+    // if(typeof newLang !== 'object') {
+    //     return res.status(400).json({status: "Bad Request"});
+    // }
 
     // overwrite lang json file with new projects
     var langJson = {};
@@ -67,7 +67,8 @@ router.put("/management/lang", (req, res) => {
     } catch (error) {
         return res.status(400).json({status: "Bad Request"});
     }
-    langJson = newLang;
+    // from base64 to json
+    langJson = JSON.parse(Buffer.from(newLang, 'base64').toString('utf-8'));
     fs.writeFileSync("./assets/lang/" + lang.toLocaleLowerCase()+".json", JSON.stringify(langJson, null, 4), "utf8");
 
     return res.status(200).json({status: "ok"});
