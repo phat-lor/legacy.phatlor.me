@@ -44,7 +44,7 @@ router.put("/management/lang", (req, res) => {
     if(portToken != process.env.admin_key) {
         return res.status(401).json({status: "Unauthorized"});
     }
-    const { lang, projects: newLang } = req.body;
+    const { lang, newLang } = req.body;
     if(lang == undefined || lang == null || lang == "") {
         return res.status(400).json({status: "Bad Request"});
     }
