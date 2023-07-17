@@ -108,14 +108,14 @@
                         "source": "/docs/gamertocoder/Proof_of_Reward.pdf"
                     },
                     {
-                        "Compitition": "Soon",
-                        "Team": "",
-                        "Year": "",
-                        "Orginiztion": "",
-                        "Position": "",
+                        "Compitition": "PIM Robotics Playground 2023",
+                        "Team": "SyncedTeach",
+                        "Year": "17-18 June 2024",
+                        "Orginiztion": "CP All Public Company Limited Panyapiwat Institute of Management Robo Innovator Club and Thai Robot Teacher Club under the support of the Ministry of Education and various institutions",
+                        "Position": "3rd runner-up award computer software project",
                         "Price": "",
-                        "image": "",
-                        "source": ""
+                        "image": "/img/awards/pim2023",
+                        "source": "/docs/pim/PIM2023_Certificate.pdf"
                     },
                     {
                         "Compitition": "Soon",
@@ -159,6 +159,10 @@
                     {
                         "name": "MUICT Smart: Basic C Programming 2023",
                         "image": "/img/certificates/ict-c-languge-2023.png"
+                    },
+                    {
+                        "name": "PIM Robotics Playground 2023: 3rd runner-up award",
+                        "image": "/img/certificates/pim2023-award.png"
                     }
                 ]
             }
