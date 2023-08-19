@@ -58,8 +58,8 @@
         "items": [
             {
                 "name": "SyncedTeach",
-                "description": "SyncedTeach is an *attempt* to make a free and open-source self-hostable school dashboard",
-                "author": "Phat Lorthammakun & mistertfy64(Tinnaphop Choonchuachan)",
+                "description": "SyncedTeach is an atemp to make a free and open-source self-hostable school dashboard",
+                "author": "Phat Lorthammakun & mistertfy64(Tinnaphop Choonchuachan) & body for emotional support",
                 "version": "Release-Demo",
                 "youtube_embed": "",
                 "details": {
@@ -114,7 +114,7 @@
                         "Orginiztion": "CP All Public Company Limited Panyapiwat Institute of Management Robo Innovator Club and Thai Robot Teacher Club under the support of the Ministry of Education and various institutions",
                         "Position": "3rd runner-up award computer software project",
                         "Price": "",
-                        "image": "/img/awards/pim2023",
+                        "image": "/img/awards/pim2023.jpg",
                         "source": "/docs/pim/PIM2023_Certificate.pdf"
                     },
                     {
@@ -132,6 +132,10 @@
             "Certificates": {
                 "title": "Certificates",
                 "items": [
+                    {
+                        "name": "PIM Robotics Playground 2023: 3rd runner-up award",
+                        "image": "/img/certificates/pim2023-award.png"
+                    },
                     {
                         "name": "MUICT-AST: Introduction to Cybersecurity",
                         "image": "/img/certificates/muict-cybersecurity.png"
@@ -159,10 +163,6 @@
                     {
                         "name": "MUICT Smart: Basic C Programming 2023",
                         "image": "/img/certificates/ict-c-languge-2023.png"
-                    },
-                    {
-                        "name": "PIM Robotics Playground 2023: 3rd runner-up award",
-                        "image": "/img/certificates/pim2023-award.png"
                     }
                 ]
             }
