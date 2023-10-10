@@ -133,6 +133,10 @@
                 "title": "Certificates",
                 "items": [
                     {
+                        "name": "Thailand Cyber Top Talent 2023",
+                        "image": "/img/certificates/cyber-top-2023.png"
+                    },
+                    {
                         "name": "PIM Robotics Playground 2023: 3rd runner-up award",
                         "image": "/img/certificates/pim2023-award.png"
                     },
