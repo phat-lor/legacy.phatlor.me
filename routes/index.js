@@ -18,7 +18,7 @@ router.get("/", (req, res) => {
         return res.redirect(`/error?error=Language "${curlang}" not found this error should be automatically fixed. Please click the "go back home" button. If the problem still appears, please contact me.`)
     }
 
-    res.render("maintenance", {lang: lang});
+    res.render("index", {lang: lang});
 });
 
 router.get("/home" , (req, res) => {
