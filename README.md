@@ -9,7 +9,7 @@ This is one of my early website projects that uses a mix of server-side (Express
 - **Server-Side Skills**: I used Express to handle data efficiently on the server side.
 - **Interactive Elements**: There's client-side JavaScript to make the site more dynamic and engaging.
 - **Content Management Panel**: An easy way for me to manage and update content on my site without touching the source code (private).
-
+- **Multilingual Support**: The site is designed with multilingual support, representing the best implementation available at that time, showcasing my growth and learning in web development.
 
 ## Why Check It Out?
 
