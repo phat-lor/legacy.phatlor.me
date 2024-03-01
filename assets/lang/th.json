@@ -1,112 +1,112 @@
 {
-    "NavTitle": "ภัทร ล้อธรรมคุณ",
-    "NavItems": [
-        {
-            "title": "หน้าหลัก",
-            "link": "tohome();"
-        },
-        {
-            "title": "เกี่ยวกับ",
-            "link": "toabout();"
-        },
-        {
-            "title": "โครงการ",
-            "link": "toprojects();"
-        },
-        {
-            "title": "ผลงาน",
-            "link": "toachievement();"
-        },
-        {
-            "title": "Lang: EN",
-            "link": "langEN();"
-        }
-    ],
-    "Home": {
-        "Title": "ภัทร ล้อธรรมคุณ",
-        "Subtitle": "ยินดีต้อนรับสู่เว็บไซต์ของผม! ผมเป็นนักเรียนมปลายที่ชอบเขียนโค้ด คุณสามารถเรียนรู้เพิ่มเติมเกี่ยวกับความสนใจและโครงการของฉันได้ที่นี่"
+  "NavTitle": "ภัทร ล้อธรรมคุณ",
+  "NavItems": [
+    {
+      "title": "หน้าหลัก",
+      "link": "tohome();"
     },
-    "About": {
-        "Title": "เกี่ยวกับตัวผม",
-        "Subtitle": "สวัสดี ฉันชื่อพัท หรือจะเรียกฉันว่าแพทก็ได้นะ ฉันเป็นนักเรียนมัธยมที่ชอบเขียนโค้ด ขณะนี้ฉันมุ่งเน้นไปที่การพัฒนาแบ็กเอนด์และกำลังเรียนรู้การพัฒนาเว็บไซต์ และฉันสนใจที่จะเรียนรู้เพิ่มเติมเกี่ยวกับเรื่องนี้ ฉันยังสนใจที่จะเรียนรู้เกี่ยวกับวิธีวิทยาการข้อมูลเพื่อเพิ่มประสิทธิภาพอัลกอริทึมการค้นหาและสิ่งต่างๆ",
-        "Experiences": {
-            "Title": "ประสบการณ์"
-        },
-        "Contacts": {
-            "Title": "ช่องทางติดต่อ"
-        }
+    {
+      "title": "เกี่ยวกับ",
+      "link": "toabout();"
     },
-    "Projects": {
-        "Title": "โครงการ",
-        "Subtitle": "นี่คือโครงการบางส่วนของฉันที่ฉันได้ทำไปแล้ว ฉันกำลังทำงานในโครงการที่จะเปิดตัวในเร็วๆ นี้ คอยติดตาม!",
-        "items": [
-            {
-                "name": "BCC Student Searcher",
-                "description": "ค้นหานักเรียนในฐานข้อมูลสาธารณะของ BCC (โรงเรียนกรุงเทพคริสเตียนวิทยาลัย) โดยใช้ชื่อหรือรหัสประจำตัวนักเรียน แอปนี้เป็นเวอร์ชันสาธิต ดังนั้นจึงอาจไม่ทำงานตามที่คาดไว้ แอพนี้ไม่มีส่วนเกี่ยวข้องกับ BCC แต่อย่างใด",
-                "author": "ภัทร ล้อธรรมคุณ",
-                "version": "ปล่อย-สาธิต",
-                "youtube_embed": "https://www.youtube.com/embed/1hPY_NQADEk",
-                "details": {
-                    "GitHub": "https://github.com/EpicCatto/BCC-Student-Searcher-V2",
-                    "Website": "https://bss.phatlor.me/"
-                }
-            },
-            {
-                "name": "UwU Anticheat",
-                "description": "UwU Anticheat เป็นโปรแกรมป้องกันการโกงสำหรับเซิร์ฟเวอร์ minecraft เวอร์ชัน 1.8.8 และ 1.12.2 โปรแกรมป้องกันการโกงมุ่งเน้นไปที่การบล็อกการโกงโดยมีผลบวกปลอมน้อยที่สุดเท่าที่จะทำได้ (การต่อต้านการโกงนี้ได้ถูกยกเลิกแล้ว)",
-                "author": "NotThatUwU (ภัทร ล้อธรรมคุณ)",
-                "version": "1.5.2-พัฒนา-เสถียร",
-                "youtube_embed": "https://www.youtube.com/embed/ePhZNHKYock",
-                "details": {
-                    "Website": "https://www.spigotmc.org/resources/uwu-anticheat-1-8-8-1-12-2-discontinued.92683/"
-                }
-            }
-        ]
+    {
+      "title": "โครงการ",
+      "link": "toprojects();"
     },
-    "Achievement": {
-        "title": "ผลงาน",
-        "subtitle": "นี่คือผลงานที่ผมเคยทำ",
-        "items": {
-            "Awards": {
-                "title": "การได้รับรางวัล",
-                "items": [
-                    {
-                        "Compitition": "Gamer To Coder",
-                        "Team": "2randomstudents",
-                        "Year": "2022-10 ถึง 2022-11",
-                        "Orginiztion": "กระทรวงศึกษาธิการ (ศธ.) ร่วมมือกับ บริษัท การีนา ออนไลน์ (ประเทศไทย)",
-                        "Position": "รางวัลชมเชย",
-                        "Price": "4,000 บาท",
-                        "image": "/img/awards/gamertocoder.jpg",
-                        "source": "/docs/gamertocoder/Proof_of_Reward.pdf"
-                    }
-                ]
-            },
-            "Certificates": {
-                "title": "ใบรับรอง",
-                "items": [
-                    {
-                        "name": "mariaonline-ts 2023",
-                        "image": "/img/certificates/mariaonline-ts-2023.png"
-                    },
-                    {
-                        "name": "replycode 2023",
-                        "image": "/img/certificates/replycode-2023.png"
-                    },
-                    {
-                        "name": "gamertocoder 2022",
-                        "image": "/img/certificates/gamertocoder-2022.png"
-                    },
-                    {
-                        "name": "replycode 2022",
-                        "image": "/img/certificates/replycode-2022.png"
-                    },
-                    {
-                        "name": "MUICT Smart: Basic C Programming 2023",
-                        "image": "/img/certificates/ict-c-languge-2023.png"
-                    }
-                ]
-            }
-        }
+    {
+      "title": "ผลงาน",
+      "link": "toachievement();"
+    },
+    {
+      "title": "Lang: EN",
+      "link": "langEN();"
     }
+  ],
+  "Home": {
+    "Title": "ภัทร ล้อธรรมคุณ",
+    "Subtitle": "ยินดีต้อนรับสู่เว็บไซต์ของผม! ผมเป็นนักเรียนมปลายที่ชอบเขียนโค้ด คุณสามารถเรียนรู้เพิ่มเติมเกี่ยวกับความสนใจและโครงการของฉันได้ที่นี่"
+  },
+  "About": {
+    "Title": "เกี่ยวกับตัวผม",
+    "Subtitle": "สวัสดี ฉันชื่อพัท หรือจะเรียกฉันว่าแพทก็ได้นะ ฉันเป็นนักเรียนมัธยมที่ชอบเขียนโค้ด ขณะนี้ฉันมุ่งเน้นไปที่การพัฒนาแบ็กเอนด์และกำลังเรียนรู้การพัฒนาเว็บไซต์ และฉันสนใจที่จะเรียนรู้เพิ่มเติมเกี่ยวกับเรื่องนี้ ฉันยังสนใจที่จะเรียนรู้เกี่ยวกับวิธีวิทยาการข้อมูลเพื่อเพิ่มประสิทธิภาพอัลกอริทึมการค้นหาและสิ่งต่างๆ",
+    "Experiences": {
+      "Title": "ประสบการณ์"
+    },
+    "Contacts": {
+      "Title": "ช่องทางติดต่อ"
+    }
+  },
+  "Projects": {
+    "Title": "โครงการ",
+    "Subtitle": "นี่คือโครงการบางส่วนของฉันที่ฉันได้ทำไปแล้ว ฉันกำลังทำงานในโครงการที่จะเปิดตัวในเร็วๆ นี้ คอยติดตาม!",
+    "items": [
+      {
+        "name": "BCC Student Searcher",
+        "description": "ค้นหานักเรียนในฐานข้อมูลสาธารณะของ BCC (โรงเรียนกรุงเทพคริสเตียนวิทยาลัย) โดยใช้ชื่อหรือรหัสประจำตัวนักเรียน แอปนี้เป็นเวอร์ชันสาธิต ดังนั้นจึงอาจไม่ทำงานตามที่คาดไว้ แอพนี้ไม่มีส่วนเกี่ยวข้องกับ BCC แต่อย่างใด",
+        "author": "ภัทร ล้อธรรมคุณ",
+        "version": "ปล่อย-สาธิต",
+        "youtube_embed": "https://www.youtube.com/embed/1hPY_NQADEk",
+        "details": {
+          "GitHub": "https://github.com/EpicCatto/BCC-Student-Searcher-V2",
+          "Website": "https://bss.phatlor.me/"
+        }
+      },
+      {
+        "name": "UwU Anticheat",
+        "description": "UwU Anticheat เป็นโปรแกรมป้องกันการโกงสำหรับเซิร์ฟเวอร์ minecraft เวอร์ชัน 1.8.8 และ 1.12.2 โปรแกรมป้องกันการโกงมุ่งเน้นไปที่การบล็อกการโกงโดยมีผลบวกปลอมน้อยที่สุดเท่าที่จะทำได้ (การต่อต้านการโกงนี้ได้ถูกยกเลิกแล้ว)",
+        "author": "NotThatUwU (ภัทร ล้อธรรมคุณ)",
+        "version": "1.5.2-พัฒนา-เสถียร",
+        "youtube_embed": "https://www.youtube.com/embed/ePhZNHKYock",
+        "details": {
+          "Website": "https://www.spigotmc.org/resources/uwu-anticheat-1-8-8-1-12-2-discontinued.92683/"
+        }
+      }
+    ]
+  },
+  "Achievement": {
+    "title": "ผลงาน",
+    "subtitle": "นี่คือผลงานที่ผมเคยทำ",
+    "items": {
+      "Awards": {
+        "title": "การได้รับรางวัล",
+        "items": [
+          {
+            "Compitition": "Gamer To Coder",
+            "Team": "2randomstudents",
+            "Year": "2022-10 ถึง 2022-11",
+            "Orginiztion": "กระทรวงศึกษาธิการ (ศธ.) ร่วมมือกับ บริษัท การีนา ออนไลน์ (ประเทศไทย)",
+            "Position": "รางวัลชมเชย",
+            "Price": "4,000 บาท",
+            "image": "/img/awards/gamertocoder.jpg",
+            "source": "/docs/gamertocoder/Proof_of_Reward.pdf"
+          }
+        ]
+      },
+      "Certificates": {
+        "title": "ใบรับรอง",
+        "items": [
+          {
+            "name": "mariaonline-ts 2023",
+            "image": "/img/certificates/mariaonline-ts-2023.png"
+          },
+          {
+            "name": "replycode 2023",
+            "image": "/img/certificates/replycode-2023.png"
+          },
+          {
+            "name": "gamertocoder 2022",
+            "image": "/img/certificates/gamertocoder-2022.png"
+          },
+          {
+            "name": "replycode 2022",
+            "image": "/img/certificates/replycode-2022.png"
+          },
+          {
+            "name": "MUICT Smart: Basic C Programming 2023",
+            "image": "/img/certificates/ict-c-languge-2023.png"
+          }
+        ]
+      }
+    }
+  }
 }

@@ -4,11 +4,10 @@ var fs = require("fs");
 // file deepcode ignore NoRateLimitingForExpensiveWebOperation: Already have rate limit in the index.js
 
 router.get("/error", (req, res) => {
-    const error = req.query.error;
+  const error = req.query.error;
 
-    res.render("error", {error: error});
+  res.render("error", { error: error });
 });
-
 
 // router.post ("/", (request, response) => {
 //     var data = request.body;
