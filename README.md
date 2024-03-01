@@ -8,11 +8,7 @@ This is one of my early website projects that uses a mix of server-side (Express
 
 - **Server-Side Skills**: I used Express to handle data efficiently on the server side.
 - **Interactive Elements**: There's client-side JavaScript to make the site more dynamic and engaging.
-- **Content Management Panel**: An easy way for me to manage and update content on my site without touching the source code.<details>
-  <summary>Preview here</summary>
-  <!-- Add your image link or description here -->
-  ![Content Management Panel Preview](https://example.com/content-management-panel-preview.png)
-</details>
+- **Content Management Panel**: An easy way for me to manage and update content on my site without touching the source code (private).
 
 
 ## Why Check It Out?
