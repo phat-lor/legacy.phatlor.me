@@ -9,9 +9,32 @@
       "title": "เกี่ยวกับ",
       "link": "toabout();"
     },
-    {
-      "title": "โครงการ",
-      "link": "toprojects();"
+    "Projects": {
+        "Title": "โครงการ",
+        "Subtitle": "นี่คือโครงการบางส่วนของฉันที่ฉันได้ทำไปแล้ว ฉันกำลังทำงานในโครงการที่จะเปิดตัวในเร็วๆ นี้ คอยติดตาม!",
+        "items": [
+            {
+                "name": "BCC Student Searcher",
+                "description": "ค้นหานักเรียนในฐานข้อมูลสาธารณะของ BCC (โรงเรียนกรุงเทพคริสเตียนวิทยาลัย) โดยใช้ชื่อหรือรหัสประจำตัวนักเรียน แอปนี้เป็นเวอร์ชันสาธิต ดังนั้นจึงอาจไม่ทำงานตามที่คาดไว้ แอพนี้ไม่มีส่วนเกี่ยวข้องกับ BCC แต่อย่างใด",
+                "author": "ภัทร ล้อธรรมคุณ",
+                "version": "ปล่อย-สาธิต",
+                "youtube_embed": "https://www.youtube.com/embed/1hPY_NQADEk",
+                "details": {
+                    "GitHub": "https://github.com/EpicCatto/BCC-Student-Searcher-V2",
+                    "Website": "https://bss.phatlor.me/"
+                }
+            },
+            {
+                "name": "UwU Anticheat",
+                "description": "UwU Anticheat เป็นโปรแกรมป้องกันการโกงสำหรับเซิร์ฟเวอร์ minecraft เวอร์ชัน 1.8.8 และ 1.12.2 โปรแกรมป้องกันการโกงมุ่งเน้นไปที่การบล็อกการโกงโดยมีผลบวกปลอมน้อยที่สุดเท่าที่จะทำได้ (การต่อต้านการโกงนี้ได้ถูกยกเลิกแล้ว)",
+                "author": "NTUwU (ภัทร ล้อธรรมคุณ)",
+                "version": "1.5.2-พัฒนา-เสถียร",
+                "youtube_embed": "https://www.youtube.com/embed/ePhZNHKYock",
+                "details": {
+                    "Website": "https://www.spigotmc.org/resources/uwu-anticheat-1-8-8-1-12-2-discontinued.92683/"
+                }
+            }
+        ]
     },
     {
       "title": "ผลงาน",
